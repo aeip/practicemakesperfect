@@ -11604,3 +11604,742 @@ Processing by HobbiesController#new as HTML
   Rendered hobbies/new.html.erb within layouts/application (62.1ms)
   Rendered layouts/_header.html.erb (2.0ms)
 Completed 200 OK in 91ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 11:37:51 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (4.0ms)
+Warning. Error encountered while saving cache eb31acc816236f865db710769cf462a9ce541661/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache bb4c68562276e250767ff22daa084f7ce65e13fa/bootstrap.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_variables.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_mixins.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_normalize.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_print.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_scaffolding.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_type.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_code.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_grid.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_tables.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_forms.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_buttons.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_component-animations.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_glyphicons.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_dropdowns.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_button-groups.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_input-groups.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_navs.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_navbar.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_pagination.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_pager.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_labels.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_badges.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_jumbotron.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_thumbnails.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_alerts.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_progress-bars.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_media.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_list-group.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_panels.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_wells.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_close.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_modals.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_tooltip.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_popovers.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_carousel.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_utilities.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x51bde58>
+
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (52.0ms)
+Completed 200 OK in 2535ms (Views: 2503.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:37:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 11:37:57 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 11:37:59 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (76.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 142ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d03ip2OHwEAOFAkOfKrdB9tfLhMuTRzhveIE1T9yfAU=", "user"=>{"email"=>"slsatre@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'slsatre@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 55ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d03ip2OHwEAOFAkOfKrdB9tfLhMuTRzhveIE1T9yfAU=", "user"=>{"email"=>"slsatre@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:38:03 -0400
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d03ip2OHwEAOFAkOfKrdB9tfLhMuTRzhveIE1T9yfAU=", "user"=>{"email"=>"slsatre@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'slsatre@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d03ip2OHwEAOFAkOfKrdB9tfLhMuTRzhveIE1T9yfAU=", "user"=>{"email"=>"slsatre@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 94ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:38:08 -0400
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d03ip2OHwEAOFAkOfKrdB9tfLhMuTRzhveIE1T9yfAU=", "user"=>{"email"=>"slsatre@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'slsatre@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 11ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d03ip2OHwEAOFAkOfKrdB9tfLhMuTRzhveIE1T9yfAU=", "user"=>{"email"=>"slsatre@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 92ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:38:10 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 11:38:17 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:17 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:17 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:38:18 -0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-09 11:38:19 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d03ip2OHwEAOFAkOfKrdB9tfLhMuTRzhveIE1T9yfAU=", "user"=>{"name"=>"Sam Satre", "email"=>"slsatre@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'slsatre@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (10.0ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 09 Mar 2014 15:38:22 UTC +00:00], ["email", "slsatre@gmail.com"], ["encrypted_password", "$2a$10$HurE5tLzeZ4q/KXPfTuHVOv7tDFNYLBcdJcQJA13r80yrIwgPgRp6"], ["name", "Sam Satre"], ["updated_at", Sun, 09 Mar 2014 15:38:22 UTC +00:00]]
+  [1m[36m (101.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (2.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3[0m  [["last_sign_in_at", Sun, 09 Mar 2014 15:38:22 UTC +00:00], ["current_sign_in_at", Sun, 09 Mar 2014 15:38:22 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Sun, 09 Mar 2014 15:38:22 UTC +00:00]]
+  [1m[35m (150.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 378ms (ActiveRecord: 264.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:38:22 -0400
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 11:38:28 -0400
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 11:38:29 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (46.0ms)
+Completed 200 OK in 256ms (Views: 220.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:49:20 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (1.0ms)[0m  SELECT "hobbies".* FROM "hobbies"
+  Rendered hobbies/index.html.erb within layouts/application (38.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 65ms (Views: 56.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:49:32 -0400
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 11:49:34 -0400
+Processing by HobbiesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/_form.html.erb (41.0ms)
+  Rendered hobbies/new.html.erb within layouts/application (47.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 11:49:43 -0400
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (1.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d03ip2OHwEAOFAkOfKrdB9tfLhMuTRzhveIE1T9yfAU="}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (11.0ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:49:46 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+Processing by HobbiesController#index as HTML
+  Rendered hobbies/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-09 11:49:55 -0400
