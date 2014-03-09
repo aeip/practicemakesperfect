@@ -16,6 +16,7 @@
       <th>Saturday</th>
       <th>Created</th>
       <th>Weekly Hours</th>
+      <th>Twilio reminder</th>
     </tr>
     </thead>
     <tbody>
@@ -32,6 +33,7 @@
         <td><%= hobby.saturday %></td>
         <td><%= hobby.created_at %></td>
         <td><%= hobby.sunday + hobby.monday + hobby.tuesday + hobby.wednesday + hobby.thursday + hobby.friday + hobby.saturday %></td>
+        <td><input type="checkbox" checked></input></td>
         <td><button class="button button-positive"><%= link_to 'Show', hobby %></button></td>
         <td><button class="button button-energized"><%= link_to 'Edit', edit_hobby_path(hobby) %></button></td>
         <td><button class="button button-assertive"><%= link_to 'Delete', hobby, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
