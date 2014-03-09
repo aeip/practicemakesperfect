@@ -1,6 +1,5 @@
 <% if user_signed_in? %>
 <h1>Your hobbies</h1>
-
 <div class="panel panel-default">
   <div class="panel-heading">Hours completed in your hobby</div>
   <table class="table">
@@ -16,6 +15,7 @@
       <th>Friday</th>
       <th>Saturday</th>
       <th>Created</th>
+      <th>Weekly Hours</th>
     </tr>
     </thead>
     <tbody>
@@ -31,6 +31,7 @@
         <td><%= hobby.friday %></td>
         <td><%= hobby.saturday %></td>
         <td><%= hobby.created_at %></td>
+        <td><%= hobby.sunday + hobby.monday + hobby.tuesday + hobby.wednesday + hobby.thursday + hobby.friday + hobby.saturday %></td>
         <td><button class="button button-positive"><%= link_to 'Show', hobby %></button></td>
         <td><button class="button button-energized"><%= link_to 'Edit', edit_hobby_path(hobby) %></button></td>
         <td><button class="button button-assertive"><%= link_to 'Delete', hobby, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
