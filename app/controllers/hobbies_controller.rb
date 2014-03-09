@@ -26,28 +26,39 @@ class HobbiesController < ApplicationController
   def create
     @hobby = Hobby.new(hobby_params)
 
+    respond_to do |format|
       if @hobby.save
-        redirect_to @hobby, notice: 'Hobby was successfully created.'
+        format.html { redirect_to @hobby, notice: 'Hobby was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @hobby }
       else
-        render action: 'new'
+        format.html { render action: 'new' }
+        format.json { render json: @hobby.errors, status: :unprocessable_entity }
       end
+    end
   end
 
   # PATCH/PUT /hobbies/1
   # PATCH/PUT /hobbies/1.json
   def update
+    respond_to do |format|
       if @hobby.update(hobby_params)
-        redirect_to @hobby, notice: 'Hobby was successfully updated.'
+        format.html { redirect_to @hobby, notice: 'Hobby was successfully updated.' }
+        format.json { head :no_content }
       else
-        render action: 'edit'
+        format.html { render action: 'edit' }
+        format.json { render json: @hobby.errors, status: :unprocessable_entity }
       end
+    end
   end
 
   # DELETE /hobbies/1
   # DELETE /hobbies/1.json
   def destroy
     @hobby.destroy
-      redirect_to hobbies_url
+    respond_to do |format|
+      format.html { redirect_to hobbies_url }
+      format.json { head :no_content }
+    end
   end
 
   private
@@ -58,6 +69,6 @@ class HobbiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hobby_params
-      params.require(:hobby).permit(:description)
+      params.require(:hobby).permit(:name, :description, :schedule, :created_at)
     end
 end

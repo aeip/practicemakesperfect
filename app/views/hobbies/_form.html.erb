@@ -12,8 +12,20 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
     <%= f.label :description %><br>
     <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :schedule %><br>
+    <%= f.datetime_select :schedule %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br>
+    <%= f.datetime_select :created_at %>
   </div>
   <div class="actions">
     <%= f.submit %>

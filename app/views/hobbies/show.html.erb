@@ -1,8 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Name:</strong>
+  <%= @hobby.name %>
+</p>
+
+<p>
   <strong>Description:</strong>
   <%= @hobby.description %>
+</p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @hobby.schedule %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @hobby.created_at %>
 </p>
 
 <%= link_to 'Edit', edit_hobby_path(@hobby) %> |

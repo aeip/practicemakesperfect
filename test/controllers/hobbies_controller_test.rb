@@ -18,7 +18,7 @@ class HobbiesControllerTest < ActionController::TestCase
 
   test "should create hobby" do
     assert_difference('Hobby.count') do
-      post :create, hobby: { description: @hobby.description }
+      post :create, hobby: { created_at: @hobby.created_at, description: @hobby.description, name: @hobby.name, schedule: @hobby.schedule }
     end
 
     assert_redirected_to hobby_path(assigns(:hobby))
@@ -35,7 +35,7 @@ class HobbiesControllerTest < ActionController::TestCase
   end
 
   test "should update hobby" do
-    patch :update, id: @hobby, hobby: { description: @hobby.description }
+    patch :update, id: @hobby, hobby: { created_at: @hobby.created_at, description: @hobby.description, name: @hobby.name, schedule: @hobby.schedule }
     assert_redirected_to hobby_path(assigns(:hobby))
   end
 

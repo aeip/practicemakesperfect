@@ -3,7 +3,10 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
       <th>Description</th>
+      <th>Schedule</th>
+      <th>Created at</th>
       <th></th>
       <th></th>
       <th></th>
@@ -13,7 +16,10 @@
   <tbody>
     <% @hobbies.each do |hobby| %>
       <tr>
+        <td><%= hobby.name %></td>
         <td><%= hobby.description %></td>
+        <td><%= hobby.schedule %></td>
+        <td><%= hobby.created_at %></td>
         <td><%= link_to 'Show', hobby %></td>
         <td><%= link_to 'Edit', edit_hobby_path(hobby) %></td>
         <td><%= link_to 'Destroy', hobby, method: :delete, data: { confirm: 'Are you sure?' } %></td>
