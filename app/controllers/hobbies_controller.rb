@@ -27,7 +27,7 @@ class HobbiesController < ApplicationController
     @hobby = Hobby.new(hobby_params)
 
       if @hobby.save
-        redirect_to @hobby, notice: 'Hobby was successfully created.'
+        edirect_to @hobby, notice: 'Hobby was successfully created.'
       else
         render action: 'new'
       end
@@ -58,6 +58,6 @@ class HobbiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hobby_params
-      params.require(:hobby).permit(:name, :description, :schedule, :created_at)
+      params.require(:hobby).permit(:name, :description, :sunday, :monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :created_at)
     end
 end

@@ -13,17 +13,35 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_area :name %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :schedule %><br>
-    <%= f.datetime_select :schedule %>
+    <table>
+      <tr>
+        <td><%= f.label :sunday %></td>
+        <td><%= f.label :monday %></td>
+        <td><%= f.label :tuesday %></td>
+        <td><%= f.label :wednesday %></td>
+        <td><%= f.label :thursday %></td>
+        <td><%= f.label :friday %></td>
+        <td><%= f.label :saturday %></td>
+      </tr>
+      <tr>
+        <td><%= f.text_field :sunday %></td>
+        <td><%= f.text_field :monday %></td>
+        <td><%= f.text_field :tuesday %></td>
+        <td><%= f.text_field :wednesday %></td>
+        <td><%= f.text_field :thursday %></td>
+        <td><%= f.text_field :friday %></td>
+        <td><%= f.text_field :saturday %></td>
+      </tr>
+    </table>
   </div>
-  <div class="field">
+  <div class="field" style="display:none">
     <%= f.label :created_at %><br>
     <%= f.datetime_select :created_at %>
   </div>

@@ -11,12 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140309145318) do
+ActiveRecord::Schema.define(version: 20140309151419) do
 
   create_table "hobbies", force: true do |t|
-    t.string   "name"
-    t.string   "description"
-    t.datetime "schedule"
+    t.text     "name"
+    t.text     "description"
+    t.integer  "sunday"
+    t.integer  "monday"
+    t.integer  "tuesday"
+    t.integer  "wednesday"
+    t.integer  "thursday"
+    t.integer  "friday"
+    t.integer  "saturday"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

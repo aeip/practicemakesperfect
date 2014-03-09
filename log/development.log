@@ -9467,3 +9467,1358 @@ Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (8.4ms)
+  Rendered hobbies/new.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:01:56 -0600
+
+
+Started POST "/hobbies" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+Processing by HobbiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHIPpxEdAWd+rHZUdYA0BcefkBy0PPEA59POMmENni0=", "hobby"=>{"name"=>"Test", "description"=>"This is a test", "schedule(1i)"=>"2014", "schedule(2i)"=>"3", "schedule(3i)"=>"9", "schedule(4i)"=>"15", "schedule(5i)"=>"01", "created_at(1i)"=>"2014", "created_at(2i)"=>"3", "created_at(3i)"=>"9", "created_at(4i)"=>"15", "created_at(5i)"=>"01"}, "commit"=>"Create Hobby"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "hobbies" ("created_at", "description", "name", "schedule", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 09 Mar 2014 15:01:00 UTC +00:00], ["description", "This is a test"], ["name", "Test"], ["schedule", Sun, 09 Mar 2014 15:01:00 UTC +00:00], ["updated_at", Sun, 09 Mar 2014 15:03:32 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/hobbies/1
+Completed 302 Found in 14ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/hobbies/1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+Processing by HobbiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mHobby Load (0.2ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered hobbies/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:32 -0600
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:03:44 -0600
+Processing by HobbiesController#index as HTML
+  [1m[36mHobby Load (0.1ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/hobbies/1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+Processing by HobbiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vHIPpxEdAWd+rHZUdYA0BcefkBy0PPEA59POMmENni0=", "id"=>"1"}
+  [1m[35mHobby Load (0.6ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "hobbies" WHERE "hobbies"."id" = ?  [["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/hobbies
+Completed 302 Found in 22ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+Processing by HobbiesController#index as HTML
+  [1m[35mHobby Load (0.1ms)[0m  SELECT "hobbies".* FROM "hobbies"
+  Rendered hobbies/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:03:47 -0600
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+Processing by HobbiesController#index as HTML
+  [1m[36mHobby Load (0.2ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:00 -0600
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:09:02 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (8.2ms)
+  Rendered hobbies/new.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (14.8ms)
+  Rendered hobbies/new.html.erb within layouts/application (18.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:09:34 -0600
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:10:32 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (16.1ms)
+  Rendered hobbies/new.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:10:32 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:10:33 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHobbies (20140309151419)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHobbies (20140309151419)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (8.5ms)[0m  [1mDROP TABLE "hobbies"[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (7.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHobbies (20140309151419)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "hobbies"[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHobbies (20140309151419)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "hobbies"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "hobbies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "description" text, "sunday" integer, "monday" integer, "tuesday" integer, "wednesday" integer, "thursday" integer, "friday" integer, "saturday" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140309151419"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (81.2ms)
+  Rendered hobbies/new.html.erb within layouts/application (85.8ms)
+  Rendered layouts/_header.html.erb (8.7ms)
+Completed 200 OK in 251ms (Views: 229.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:17:21 -0600
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (39.2ms)
+  Rendered hobbies/new.html.erb within layouts/application (40.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:21:39 -0600
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (8.4ms)
+  Rendered hobbies/new.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:26 -0600
+
+
+Started POST "/hobbies" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+Processing by HobbiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHIPpxEdAWd+rHZUdYA0BcefkBy0PPEA59POMmENni0=", "hobby"=>{"name"=>"Test", "description"=>"This is a test", "sunday"=>"5", "monday"=>"5", "tuesday"=>"5", "wednesday"=>"5", "thursday"=>"sandwich", "friday"=>"3", "saturday"=>"", "created_at(1i)"=>"2014", "created_at(2i)"=>"3", "created_at(3i)"=>"9", "created_at(4i)"=>"15", "created_at(5i)"=>"22"}, "commit"=>"Create Hobby"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "hobbies" ("created_at", "description", "friday", "monday", "name", "sunday", "thursday", "tuesday", "updated_at", "wednesday") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 09 Mar 2014 15:22:00 UTC +00:00], ["description", "This is a test"], ["friday", 3], ["monday", 5], ["name", "Test"], ["sunday", 5], ["thursday", 0], ["tuesday", 5], ["updated_at", Sun, 09 Mar 2014 15:22:55 UTC +00:00], ["wednesday", 5]]
+  [1m[35m (4.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/hobbies/1
+Completed 302 Found in 21ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/hobbies/1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+Processing by HobbiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHobby Load (0.2ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered hobbies/show.html.erb within layouts/application (39.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:22:55 -0600
+
+
+Started GET "/hobbies/1/edit" for 127.0.0.1 at 2014-03-09 09:23:02 -0600
+Processing by HobbiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mHobby Load (0.1ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered hobbies/_form.html.erb (8.1ms)
+  Rendered hobbies/edit.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:23:04 -0600
+Processing by HobbiesController#index as HTML
+  [1m[36mHobby Load (0.2ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:23:39 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (7.0ms)
+  Rendered hobbies/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/hobbies" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+Processing by HobbiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHIPpxEdAWd+rHZUdYA0BcefkBy0PPEA59POMmENni0=", "hobby"=>{"name"=>"test", "description"=>"this is a test", "sunday"=>"", "monday"=>"", "tuesday"=>"8", "wednesday"=>"7", "thursday"=>"5", "friday"=>"4", "saturday"=>"3", "created_at(1i)"=>"2014", "created_at(2i)"=>"3", "created_at(3i)"=>"9", "created_at(4i)"=>"15", "created_at(5i)"=>"23"}, "commit"=>"Create Hobby"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "hobbies" ("created_at", "description", "friday", "name", "saturday", "thursday", "tuesday", "updated_at", "wednesday") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 09 Mar 2014 15:23:00 UTC +00:00], ["description", "this is a test"], ["friday", 4], ["name", "test"], ["saturday", 3], ["thursday", 5], ["tuesday", 8], ["updated_at", Sun, 09 Mar 2014 15:23:53 UTC +00:00], ["wednesday", 7]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/hobbies/2
+Completed 302 Found in 20ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/hobbies/2" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+Processing by HobbiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHobby Load (0.1ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered hobbies/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:23:53 -0600
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:24:12 -0600
+Processing by HobbiesController#index as HTML
+  [1m[35mHobby Load (0.1ms)[0m  SELECT "hobbies".* FROM "hobbies"
+  Rendered hobbies/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/hobbies/1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+Processing by HobbiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vHIPpxEdAWd+rHZUdYA0BcefkBy0PPEA59POMmENni0=", "id"=>"1"}
+  [1m[36mHobby Load (0.1ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "hobbies" WHERE "hobbies"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/hobbies
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+Processing by HobbiesController#index as HTML
+  [1m[36mHobby Load (0.3ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:14 -0600
+
+
+Started DELETE "/hobbies/2" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+Processing by HobbiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vHIPpxEdAWd+rHZUdYA0BcefkBy0PPEA59POMmENni0=", "id"=>"2"}
+  [1m[35mHobby Load (0.2ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "hobbies" WHERE "hobbies"."id" = ?  [["id", 2]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/hobbies
+Completed 302 Found in 21ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+Processing by HobbiesController#index as HTML
+  [1m[35mHobby Load (0.1ms)[0m  SELECT "hobbies".* FROM "hobbies"
+  Rendered hobbies/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:24:16 -0600
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:25:02 -0600
+Processing by HobbiesController#index as HTML
+  [1m[36mHobby Load (0.2ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:02 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:02 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:02 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:03 -0600
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:25:04 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (8.7ms)
+  Rendered hobbies/new.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/hobbies" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+Processing by HobbiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHIPpxEdAWd+rHZUdYA0BcefkBy0PPEA59POMmENni0=", "hobby"=>{"name"=>"blah", "description"=>"blah blah", "sunday"=>"1", "monday"=>"1", "tuesday"=>"1", "wednesday"=>"11", "thursday"=>"1", "friday"=>"1", "saturday"=>"1", "created_at(1i)"=>"2014", "created_at(2i)"=>"3", "created_at(3i)"=>"9"}, "commit"=>"Create Hobby"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (9.3ms)[0m  [1mINSERT INTO "hobbies" ("created_at", "description", "friday", "monday", "name", "saturday", "sunday", "thursday", "tuesday", "updated_at", "wednesday") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 09 Mar 2014 00:00:00 UTC +00:00], ["description", "blah blah"], ["friday", 1], ["monday", 1], ["name", "blah"], ["saturday", 1], ["sunday", 1], ["thursday", 1], ["tuesday", 1], ["updated_at", Sun, 09 Mar 2014 15:25:15 UTC +00:00], ["wednesday", 11]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/hobbies/3
+Completed 302 Found in 17ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/hobbies/3" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+Processing by HobbiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHobby Load (0.4ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered hobbies/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:25:15 -0600
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:26:31 -0600
+Processing by HobbiesController#index as HTML
+  [1m[35mHobby Load (0.1ms)[0m  SELECT "hobbies".* FROM "hobbies"
+  Rendered hobbies/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/hobbies/3" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+Processing by HobbiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vHIPpxEdAWd+rHZUdYA0BcefkBy0PPEA59POMmENni0=", "id"=>"3"}
+  [1m[36mHobby Load (0.1ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "hobbies" WHERE "hobbies"."id" = ?[0m  [["id", 3]]
+  [1m[35m (8.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/hobbies
+Completed 302 Found in 14ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+Processing by HobbiesController#index as HTML
+  [1m[36mHobby Load (0.2ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:26:35 -0600
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:26:36 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (49.7ms)
+  Rendered hobbies/new.html.erb within layouts/application (50.4ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (undefined method `time_ago_in_words' for #<ActionView::Helpers::FormBuilder:0x000001013177a0>):
+    43:   </div>
+    44:   <div class="field" style="display:none">
+    45:     <%= f.label :created_at %><br>
+    46:     <%= f.time_ago_in_words :created_at %>
+    47:   </div>
+    48:   <div class="actions">
+    49:     <%= f.submit %>
+  app/views/hobbies/_form.html.erb:46:in `block in _app_views_hobbies__form_html_erb__1068644437044778370_2163099840'
+  app/views/hobbies/_form.html.erb:1:in `_app_views_hobbies__form_html_erb__1068644437044778370_2163099840'
+  app/views/hobbies/new.html.erb:3:in `_app_views_hobbies_new_html_erb___610264724322757830_2175989740'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.2ms)
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:26:36 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (27.3ms)
+  Rendered hobbies/new.html.erb within layouts/application (28.1ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `time_ago_in_words' for #<ActionView::Helpers::FormBuilder:0x000001035da080>):
+    43:   </div>
+    44:   <div class="field" style="display:none">
+    45:     <%= f.label :created_at %><br>
+    46:     <%= f.time_ago_in_words :created_at %>
+    47:   </div>
+    48:   <div class="actions">
+    49:     <%= f.submit %>
+  app/views/hobbies/_form.html.erb:46:in `block in _app_views_hobbies__form_html_erb__1068644437044778370_2175615560'
+  app/views/hobbies/_form.html.erb:1:in `_app_views_hobbies__form_html_erb__1068644437044778370_2175615560'
+  app/views/hobbies/new.html.erb:3:in `_app_views_hobbies_new_html_erb___610264724322757830_2175406320'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:27:09 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (48.1ms)
+  Rendered hobbies/new.html.erb within layouts/application (48.7ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (undefined method `distance_of_time_in_words' for #<ActionView::Helpers::FormBuilder:0x000001036e01a0>):
+    43:   </div>
+    44:   <div class="field" style="display:none">
+    45:     <%= f.label :created_at %><br>
+    46:     <%= f.distance_of_time_in_words :created_at %>
+    47:   </div>
+    48:   <div class="actions">
+    49:     <%= f.submit %>
+  app/views/hobbies/_form.html.erb:46:in `block in _app_views_hobbies__form_html_erb__1068644437044778370_2176191640'
+  app/views/hobbies/_form.html.erb:1:in `_app_views_hobbies__form_html_erb__1068644437044778370_2176191640'
+  app/views/hobbies/new.html.erb:3:in `_app_views_hobbies_new_html_erb___610264724322757830_2175406320'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (7.4ms)
+  Rendered hobbies/new.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:29:51 -0600
+
+
+Started POST "/hobbies" for 127.0.0.1 at 2014-03-09 09:29:53 -0600
+Processing by HobbiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHIPpxEdAWd+rHZUdYA0BcefkBy0PPEA59POMmENni0=", "hobby"=>{"name"=>"", "description"=>"", "sunday"=>"", "monday"=>"", "tuesday"=>"", "wednesday"=>"", "thursday"=>"", "friday"=>"", "saturday"=>"", "created_at(1i)"=>"2014", "created_at(2i)"=>"3", "created_at(3i)"=>"9", "created_at(4i)"=>"15", "created_at(5i)"=>"29"}, "commit"=>"Create Hobby"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "hobbies" ("created_at", "description", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 09 Mar 2014 15:29:00 UTC +00:00], ["description", ""], ["name", ""], ["updated_at", Sun, 09 Mar 2014 15:29:53 UTC +00:00]]
+  [1m[35m (8.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/hobbies/4
+Completed 302 Found in 19ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/hobbies/4" for 127.0.0.1 at 2014-03-09 09:29:53 -0600
+Processing by HobbiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHobby Load (0.1ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered hobbies/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `distance_of_time_in_words' for #<Hobby:0x000001024cea98>):
+    47: 
+    48: <p>
+    49:   <strong>Created at:</strong>
+    50:   <%= @hobby.distance_of_time_in_words %>
+    51: </p>
+    52: 
+    53: <%= link_to 'Edit', edit_hobby_path(@hobby) %> |
+  app/views/hobbies/show.html.erb:50:in `_app_views_hobbies_show_html_erb__444588266031626361_2166777260'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+
+
+Started GET "/hobbies/4" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+Processing by HobbiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mHobby Load (0.1ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered hobbies/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 41ms (Views: 11.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:31:47 -0600
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 09:31:54 -0600
+Processing by HobbiesController#index as HTML
+  [1m[36mHobby Load (0.2ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms)
