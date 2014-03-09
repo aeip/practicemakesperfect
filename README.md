@@ -1,6 +1,7 @@
-# One Month Rails
+# PracticeMakesPerfect
 
-This is the pinteresting sample application for
-[*One Month Rails*](http://onemonthrails.com)
+This is the PracticeMakesPerfect Repository
 
-by [Mattan Griffel](http://mattangriffel.com)
+by [Colin](#)
+	[Sam](#
+	[Stasy](http://aeipsapps.tumblr.com)
