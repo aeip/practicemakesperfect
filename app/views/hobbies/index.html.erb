@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+<% if user_signed_in? %>
+<h1>Listing hobbies</h1>
+=======
 <h1>Your hobbies</h1>
+>>>>>>> 5afb831e83ca592dc1a86b1d63f6a27c80d75ac9
 
 <table>
   <thead>
@@ -43,3 +48,10 @@
 <br>
 
 <%= link_to 'New Hobby', new_hobby_path %>
+<% else %>
+  <h1>you must signin or sign up</h1>
+  <p>
+    <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-lg" %>
+  </p>
+<% end %>
