@@ -26,39 +26,28 @@ class HobbiesController < ApplicationController
   def create
     @hobby = Hobby.new(hobby_params)
 
-    respond_to do |format|
       if @hobby.save
-        format.html { redirect_to @hobby, notice: 'Hobby was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @hobby }
+        redirect_to @hobby, notice: 'Hobby was successfully created.'
       else
-        format.html { render action: 'new' }
-        format.json { render json: @hobby.errors, status: :unprocessable_entity }
+        render action: 'new'
       end
-    end
   end
 
   # PATCH/PUT /hobbies/1
   # PATCH/PUT /hobbies/1.json
   def update
-    respond_to do |format|
       if @hobby.update(hobby_params)
-        format.html { redirect_to @hobby, notice: 'Hobby was successfully updated.' }
-        format.json { head :no_content }
+        redirect_to @hobby, notice: 'Hobby was successfully updated.'
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @hobby.errors, status: :unprocessable_entity }
+        render action: 'edit'
       end
-    end
   end
 
   # DELETE /hobbies/1
   # DELETE /hobbies/1.json
   def destroy
     @hobby.destroy
-    respond_to do |format|
-      format.html { redirect_to hobbies_url }
-      format.json { head :no_content }
-    end
+      redirect_to hobbies_url
   end
 
   private
