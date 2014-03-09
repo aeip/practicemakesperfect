@@ -3,5 +3,5 @@
 This is the PracticeMakesPerfect Repository
 
 by [Colin](#)
-	[Sam](#
+	[Sam](#)
 	[Stasy](http://aeipsapps.tumblr.com)
