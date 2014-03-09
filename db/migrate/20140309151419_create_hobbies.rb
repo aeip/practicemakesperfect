@@ -1,6 +1,5 @@
 class CreateHobbies < ActiveRecord::Migration
   def change
-    drop_table :hobbies
     create_table :hobbies do |t|
       t.text :name
       t.text :description
