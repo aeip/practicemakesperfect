@@ -2029,6 +2029,7 @@ Processing by PinsController#index as HTML
 Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2014-03-08 21:30:07 -0700
 Processing by PinsController#index as HTML
   [1m[36mUser Load (6.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
@@ -3143,3 +3144,135 @@ Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-08 21:41:52
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-08 21:41:52 -0700
+=======
+Started GET "/" for 127.0.0.1 at 2014-03-08 23:33:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (1.0ms)
+  [1m[35mPin Load (0.0ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (53.0ms)
+Warning. Error encountered while saving cache 6d414899aaa21ae551862c5a1b2cf51b2f4a74b5/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache bb4c68562276e250767ff22daa084f7ce65e13fa/bootstrap.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_variables.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_mixins.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_normalize.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_print.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_scaffolding.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_type.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_code.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_grid.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_tables.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_forms.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_buttons.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_component-animations.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_glyphicons.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_dropdowns.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_button-groups.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_input-groups.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_navs.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_navbar.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_pagination.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_pager.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_labels.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_badges.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_jumbotron.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_thumbnails.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_alerts.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_progress-bars.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_media.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_list-group.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_panels.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_wells.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_close.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_modals.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_tooltip.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_popovers.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_carousel.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_utilities.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+Warning. Error encountered while saving cache ff8f1792ec9290d553165d7786e068d6cd1d8426/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x5a397e0>
+
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 3272ms (Views: 3198.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-08 23:33:13 -0500
+>>>>>>> 44e6434d07e521cdebfb4a39d0a1ec1a6afd74f7
