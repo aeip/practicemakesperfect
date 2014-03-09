@@ -2,9 +2,9 @@
 <h1>Editing hobby</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @hobby %> |
-<%= link_to 'Back', hobbies_path %>
+<br>
+<button class="button button-positive"><%= link_to 'Show', @hobby %></button>
+<button class="button button-energized"><%= link_to 'Back', hobbies_path %></button>
 <% else %>
 	<h1>you must signin or sign up</h1>
 	<p>

@@ -27,7 +27,7 @@ class HobbiesController < ApplicationController
     @hobby = Hobby.new(hobby_params)
 
       if @hobby.save
-        edirect_to @hobby, notice: 'Hobby was successfully created.'
+        redirect_to @hobby, notice: 'Hobby was successfully created.'
       else
         render action: 'new'
       end

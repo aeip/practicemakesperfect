@@ -1,9 +1,10 @@
 <% if user_signed_in? %>
-<h1>Listing hobbies</h1>
 <h1>Your hobbies</h1>
 
-<table>
-  <thead>
+<div class="panel panel-default">
+  <div class="panel-heading">Hours completed in your hobby</div>
+  <table class="table">
+    <thead>
     <tr>
       <th>Name</th>
       <th>Description</th>
@@ -14,15 +15,11 @@
       <th>Thursday</th>
       <th>Friday</th>
       <th>Saturday</th>
-      <th>Created at</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Created</th>
     </tr>
-  </thead>
-
-  <tbody>
-    <% @hobbies.each do |hobby| %>
+    </thead>
+    <tbody>
+      <% @hobbies.each do |hobby| %>
       <tr>
         <td><%= hobby.name %></td>
         <td><%= hobby.description %></td>
@@ -34,19 +31,20 @@
         <td><%= hobby.friday %></td>
         <td><%= hobby.saturday %></td>
         <td><%= hobby.created_at %></td>
-        <td><%= link_to 'Show', hobby %></td>
-        <td><%= link_to 'Edit', edit_hobby_path(hobby) %></td>
-        <td><%= link_to 'Destroy', hobby, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button class="button button-positive"><%= link_to 'Show', hobby %></button></td>
+        <td><button class="button button-energized"><%= link_to 'Edit', edit_hobby_path(hobby) %></button></td>
+        <td><button class="button button-assertive"><%= link_to 'Delete', hobby, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
 
 <br>
 
-<%= link_to 'New Hobby', new_hobby_path %>
+<a href="<%= new_hobby_path %>"><button class="button button-positive">New Hobby</button></a>
 <% else %>
-  <h1>you must signin or sign up</h1>
+  <h1>Please Sign in or Sign up</h1>
   <p>
     <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
     <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-lg" %>
