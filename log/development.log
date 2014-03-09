@@ -16872,3 +16872,1613 @@ Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:10:23
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:10:23 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:11:16 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Warning. Error encountered while saving cache 0771281656464ba01773ee75125d09929a3aadeb/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache b5822afde5831fd6e70930cccb32804affb5fc3b/bootstrap.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_variables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_mixins.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_normalize.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_print.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_type.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_code.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_grid.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_forms.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_buttons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_component-animations.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_glyphicons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_button-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_input-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navbar.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pagination.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pager.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_labels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_badges.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_jumbotron.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_alerts.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_media.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_list-group.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_panels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_wells.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_close.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_modals.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tooltip.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_popovers.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_carousel.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 1955ms (Views: 1953.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:11:18 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:11:27 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:11:28 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:11:29 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:12:32 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+Warning. Error encountered while saving cache 0771281656464ba01773ee75125d09929a3aadeb/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache b5822afde5831fd6e70930cccb32804affb5fc3b/bootstrap.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_variables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_mixins.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_normalize.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_print.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_type.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_code.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_grid.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_forms.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_buttons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_component-animations.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_glyphicons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_button-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_input-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navbar.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pagination.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pager.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_labels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_badges.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_jumbotron.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_alerts.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_media.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_list-group.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_panels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_wells.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_close.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_modals.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tooltip.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_popovers.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_carousel.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 1817ms (Views: 1816.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:12:34 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:12:37 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:12:38 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:12:39 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:13:07 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+Warning. Error encountered while saving cache 0771281656464ba01773ee75125d09929a3aadeb/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache b5822afde5831fd6e70930cccb32804affb5fc3b/bootstrap.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_variables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_mixins.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_normalize.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_print.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_type.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_code.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_grid.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_forms.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_buttons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_component-animations.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_glyphicons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_button-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_input-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navbar.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pagination.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pager.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_labels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_badges.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_jumbotron.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_alerts.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_media.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_list-group.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_panels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_wells.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_close.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_modals.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tooltip.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_popovers.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_carousel.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 1800ms (Views: 1799.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:09 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:13:19 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+Warning. Error encountered while saving cache 0771281656464ba01773ee75125d09929a3aadeb/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache b5822afde5831fd6e70930cccb32804affb5fc3b/bootstrap.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_variables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_mixins.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_normalize.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_print.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_type.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_code.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_grid.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_forms.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_buttons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_component-animations.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_glyphicons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_button-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_input-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navbar.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pagination.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pager.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_labels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_badges.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_jumbotron.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_alerts.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_media.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_list-group.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_panels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_wells.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_close.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_modals.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tooltip.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_popovers.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_carousel.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 1650ms (Views: 1648.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:21 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:13:33 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.1ms)
+Warning. Error encountered while saving cache 0771281656464ba01773ee75125d09929a3aadeb/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache b5822afde5831fd6e70930cccb32804affb5fc3b/bootstrap.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_variables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_mixins.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_normalize.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_print.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_type.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_code.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_grid.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_forms.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_buttons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_component-animations.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_glyphicons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_button-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_input-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navbar.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pagination.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pager.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_labels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_badges.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_jumbotron.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_alerts.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_media.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_list-group.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_panels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_wells.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_close.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_modals.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tooltip.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_popovers.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_carousel.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 1705ms (Views: 1704.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:13:35 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:15:04 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+Warning. Error encountered while saving cache 0771281656464ba01773ee75125d09929a3aadeb/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache b5822afde5831fd6e70930cccb32804affb5fc3b/bootstrap.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_variables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_mixins.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_normalize.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_print.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_type.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_code.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_grid.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tables.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_forms.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_buttons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_component-animations.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_glyphicons.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_button-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_input-groups.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navbar.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pagination.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pager.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_labels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_badges.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_jumbotron.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_alerts.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_media.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_list-group.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_panels.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_wells.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_close.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_modals.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tooltip.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_popovers.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_carousel.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x00000101f99820>
+
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1720ms (Views: 1719.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:05 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (38.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:15:38 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:15:54 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:16:19 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:16:35 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:17:07 -0600
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:17:09 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-09 12:17:16 -0600
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:17:17 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:17:18 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (70.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 122ms (Views: 78.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:28 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:18:42 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:19:22 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (4.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:20:37 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:20:42 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:20:44 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 33ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (48.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:21:38 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:19 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 22ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:22:49 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:12 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:31 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:23:55 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:23:59 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 75ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-09 12:24:00 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 24ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:17 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:24:27 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:24:28 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:31 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 12:24:43 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-09 12:24:45 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
