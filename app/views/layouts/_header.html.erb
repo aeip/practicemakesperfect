@@ -17,6 +17,7 @@
         <li><a href="<%= root_path %>"><button class="button icon-left ion-home">Home</button></a></li>
         <li><a href="<%= about_path %>"><button class="button icon-left ion-android-friends">About</button></a></li>
         <% if user_signed_in? %>
+          <li><a href="<%= hobbies_path %>"><button class="button icon-left ion-ios7-compose">Hobbies</button></a></li>
           <li><a href="<%= edit_user_registration_path %>"><button class="button icon-left ion-android-settings">Account settings</button></a></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% else %>
