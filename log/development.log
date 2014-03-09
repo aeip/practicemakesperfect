@@ -1,0 +1,374 @@
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20130825004945)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130825004945"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePins (20130901042954)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "pins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130901042954"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Migrating to AddUserIdToPins (20130901081152)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "pins" ADD "user_id" integer[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_pins_on_user_id" ON "pins" ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130901081152"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to AddAttachmentImageToPins (20130901094813)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "pins" ADD "image_file_name" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "pins" ADD "image_content_type" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "pins" ADD "image_file_size" integer
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "pins" ADD "image_updated_at" datetime[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130901094813"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddNameToUsers (20131017222026)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "name" varchar(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131017222026"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 19:29:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (17.9ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 2852ms (Views: 2822.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.5ms)
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:42 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-08 19:29:43 -0700
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-08 19:29:44 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (84.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 101ms (Views: 96.4ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 19:44:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.8ms)
+  [1m[35mPin Load (0.5ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (17.8ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 225ms (Views: 193.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 19:44:01 -0700
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-08 19:44:02 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (84.0ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 100ms (Views: 95.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 19:44:06 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.6ms)
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-08 19:44:07 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.4ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 23ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 19:48:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 19:53:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  [1m[35mPin Load (0.6ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 220ms (Views: 189.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 19:53:40 -0700
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-08 19:53:42 -0700
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms)
