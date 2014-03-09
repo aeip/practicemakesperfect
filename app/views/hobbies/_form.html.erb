@@ -13,11 +13,11 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_area :name %>
+    <%= f.text_area :name, :required => true %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :required => true %>
   </div>
   <br>
   <div class="panel panel-default">
@@ -36,13 +36,13 @@
         <td><%= f.label :saturday %></td>
       </tr>
       <tr>
-        <td><%= f.text_field :sunday %></td>
-        <td><%= f.text_field :monday %></td>
-        <td><%= f.text_field :tuesday %></td>
-        <td><%= f.text_field :wednesday %></td>
-        <td><%= f.text_field :thursday %></td>
-        <td><%= f.text_field :friday %></td>
-        <td><%= f.text_field :saturday %></td>
+        <td><%= f.text_field :sunday, :required => true %></td>
+        <td><%= f.text_field :monday, :required => true %></td>
+        <td><%= f.text_field :tuesday, :required => true %></td>
+        <td><%= f.text_field :wednesday, :required => true %></td>
+        <td><%= f.text_field :thursday, :required => true %></td>
+        <td><%= f.text_field :friday, :required => true %></td>
+        <td><%= f.text_field :saturday, :required => true %></td>
       </tr>
   </table>
 </div>
