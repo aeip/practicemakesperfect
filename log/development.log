@@ -9347,3 +9347,123 @@ Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 08:54:16
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 08:54:16 -0600
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+Processing by HobbiesController#index as HTML
+  [1m[35mHobby Load (0.2ms)[0m  SELECT "hobbies".* FROM "hobbies"
+  Rendered hobbies/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 08:56:35 -0600
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 08:56:39 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (31.4ms)
+  Rendered hobbies/new.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-09 09:00:02 -0600
+Processing by HobbiesController#new as HTML
+  Rendered hobbies/_form.html.erb (20.1ms)
+  Rendered hobbies/new.html.erb within layouts/application (21.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 41ms (Views: 33.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-09 09:00:02 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-09 09:00:03 -0600
