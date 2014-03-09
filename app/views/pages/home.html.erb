@@ -1,8 +1,10 @@
 <div class="jumbotron center">
 	<h1>Practice makes perfect</h1>
 	<p>Put in 10,000 hours to become an expert in whatever!</p>
+	<% if user_signed_in? == false %>
 	<p>
 		 <a href="<%= new_user_session_path %>"><button class="button button-outline button-positive">Log in</button></a>
 		 <a href="<%= new_user_registration_path %>"><button class="button button-positive">Sign up</button></a>
 	</p>
+	<% end %>
 </div>
