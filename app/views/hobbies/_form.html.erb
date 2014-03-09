@@ -19,8 +19,13 @@
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
-  <div class="field">
-    <table>
+  <br>
+  <div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Hours</div>
+
+  <!-- Table -->
+  <table class="table">
       <tr>
         <td><%= f.label :sunday %></td>
         <td><%= f.label :monday %></td>
@@ -39,8 +44,8 @@
         <td><%= f.text_field :friday %></td>
         <td><%= f.text_field :saturday %></td>
       </tr>
-    </table>
-  </div>
+  </table>
+</div>
   <div class="field" style="display:none">
     <%= f.label :created_at %><br>
     <%= f.datetime_select :created_at %>

@@ -51,8 +51,8 @@
   <%= @hobby.created_at %>
 </p>
 
-<%= link_to 'Edit', edit_hobby_path(@hobby) %> |
-<%= link_to 'Back', hobbies_path %>
+<button class="button button-positive"><%= link_to 'Edit', edit_hobby_path(@hobby) %></button>
+<button class="button button-energized"><%= link_to 'Back', hobbies_path %></button>
 <% else %>
   <h1>you must signin or sign up</h1>
   <p>
