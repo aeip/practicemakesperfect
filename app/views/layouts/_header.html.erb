@@ -14,7 +14,6 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<%= root_path %>"><button class="button button-positive icon-left ion-home">Home</button></a></li>
         <li><a href="<%= about_path %>"><button class="button button-balanced icon-left ion-android-friends">About</button></a></li>
         <% if user_signed_in? %>
           <li><a href="<%= hobbies_path %>"><button class="button button-calm icon-left ion-ios7-compose">Hobbies</button></a></li>
