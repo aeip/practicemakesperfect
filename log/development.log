@@ -734,3 +734,1296 @@ Processing by PinsController#index as HTML
   Rendered pins/index.html.erb within layouts/application (2.0ms)
   Rendered layouts/_header.html.erb (0.4ms)
 Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPin Load (0.4ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:46 -0700
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SBwKwMrds/dyerf7tXAuQ8XF7AJ1akJqVQB7YolrYFU="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.4ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-08 20:54:56 -0700
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-08 20:54:58 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 20:55:55 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.8ms)
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.5ms)
+  [1m[35mPin Load (0.7ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-08 20:56:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 20:57:53 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (1.0ms)
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___513466124239099821_2173514140'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 20:58:54 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  [1m[35mPin Load (0.4ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___513466124239099821_2173514140'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 20:59:23 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.4ms)
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___513466124239099821_2173514140'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:00:14 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.6ms)
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___513466124239099821_2173514140'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:00:28 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.5ms)
+  [1m[36mPin Load (0.7ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/javascripts/application.js:20)):
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    9: </head>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___513466124239099821_2173514140'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.6ms)
+  [1m[35mPin Load (0.5ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-08 21:00:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:04:20 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.4ms)
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___513466124239099821_2173514140'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:07:10 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.3ms)
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___513466124239099821_2173514140'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:07:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+Completed 500 Internal Server Error in 26ms
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0x000001014ee650>):
+  app/models/pin.rb:4:in `<class:Pin>'
+  app/models/pin.rb:1:in `<top (required)>'
+  app/controllers/pins_controller.rb:7:in `index'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:09:25 -0700
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `paginate' for #<ActiveRecord::Relation []>):
+  app/controllers/pins_controller.rb:7:in `index'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:10:11 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  Rendered pins/index.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%= render 'pages/home' unless user_signed_in? %>
+    2: 
+    3: <div id="pins" class="transitions-enabled">
+    4:   <% @pins.each do |pin| %>
+    5:     <div class="box panel panel-default">
+    6:       <%= link_to image_tag(pin.image.url(:medium)), pin %>
+    7:       <div class="panel-body">
+  app/views/pins/index.html.erb:4:in `_app_views_pins_index_html_erb__104099104749757929_2159057520'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:11:16 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.3ms)
+  Rendered pins/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%= render 'pages/home' unless user_signed_in? %>
+    2: 
+    3: <div id="pins" class="transitions-enabled">
+    4:   <% @pins.each do |pin| %>
+    5:     <div class="box panel panel-default">
+    6:       <%= link_to image_tag(pin.image.url(:medium)), pin %>
+    7:       <div class="panel-body">
+  app/views/pins/index.html.erb:4:in `_app_views_pins_index_html_erb__104099104749757929_2159057520'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:11:54 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.3ms)
+  Rendered pins/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%= render 'pages/home' unless user_signed_in? %>
+    2: 
+    3: <div id="pins" class="transitions-enabled">
+    4:   <% @pins.each do |pin| %>
+    5:     <div class="box panel panel-default">
+    6:       <%= link_to image_tag(pin.image.url(:medium)), pin %>
+    7:       <div class="panel-body">
+  app/views/pins/index.html.erb:4:in `_app_views_pins_index_html_erb__104099104749757929_2159057520'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:12:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  Rendered pins/index.html.erb within layouts/application (45.6ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%= render 'pages/home' unless user_signed_in? %>
+    2: 
+    3: <div id="pins" class="transitions-enabled">
+    4:   <% @pins.each do |pin| %>
+    5:     <div class="box panel panel-default">
+    6:       <%= link_to image_tag(pin.image.url(:medium)), pin %>
+    7:       <div class="panel-body">
+  app/views/pins/index.html.erb:4:in `_app_views_pins_index_html_erb___4129492142195608005_2163239000'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:12:25 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.4ms)
+  Rendered pins/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%= render 'pages/home' unless user_signed_in? %>
+    2: 
+    3: <div id="pins" class="transitions-enabled">
+    4:   <% @pins.each do |pin| %>
+    5:     <div class="box panel panel-default">
+    6:       <%= link_to image_tag(pin.image.url(:medium)), pin %>
+    7:       <div class="panel-body">
+  app/views/pins/index.html.erb:4:in `_app_views_pins_index_html_erb___4129492142195608005_2163239000'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:12:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  Rendered pins/index.html.erb within layouts/application (44.5ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%= render 'pages/home' unless user_signed_in? %>
+    2: 
+    3: <div id="pins" class="transitions-enabled">
+    4:   <% @pins.each do |pin| %>
+    5:     <div class="box panel panel-default">
+    6:       <%= link_to image_tag(pin.image.url(:medium)), pin %>
+    7:       <div class="panel-body">
+  app/views/pins/index.html.erb:4:in `_app_views_pins_index_html_erb__1970568566717427861_2189494260'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:13:50 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.3ms)
+  [1m[35mPin Load (0.4ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__901108113981789237_2189511360'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:14:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC
+Completed 500 Internal Server Error in 26ms
+
+NoMethodError (undefined method `paginate' for #<ActiveRecord::Relation []>):
+  app/controllers/pins_controller.rb:7:in `index'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:14:45 -0700
+
+SyntaxError (/Users/Aeip/Desktop/tenk-hours/app/controllers/pins_controller.rb:7: syntax error, unexpected '(', expecting keyword_end
+...n.all.order("created_at DESC")(:page => params[:page], :per_...
+...                               ^
+/Users/Aeip/Desktop/tenk-hours/app/controllers/pins_controller.rb:7: syntax error, unexpected =>, expecting :: or '[' or '.'
+... => params[:page], :per_page => 50)
+...                               ^
+/Users/Aeip/Desktop/tenk-hours/app/controllers/pins_controller.rb:57: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1113596844722833492__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Aeip/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Aeip/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Aeip/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:16:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (couldn't find file 'masonry/transitions'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:12)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1637221647734923614_2186616340'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:17:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3415978544594150014_2186740320'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:17:19 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.9ms)
+  [1m[36mPin Load (0.6ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3415978544594150014_2186740320'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:18:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.8ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (37.5ms)
+Warning. Error encountered while saving cache f395ec84d6bfb26724b66ea8b324d55b3f1869d4/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x00000101fe2f70>
+
+Completed 500 Internal Server Error in 104ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /Users/Aeip/Desktop/tenk-hours/app/assets/images
+  /Users/Aeip/Desktop/tenk-hours/app/assets/javascripts
+  /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets
+  /Users/Aeip/Desktop/tenk-hours/vendor/assets/javascripts
+  /Users/Aeip/Desktop/tenk-hours/vendor/assets/stylesheets
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/masonry-rails-0.2.1/vendor/assets/images
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/masonry-rails-0.2.1/vendor/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/masonry-rails-0.2.1/vendor/assets/stylesheets
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/ionic-rails-engine-0.9.17/app/assets/fonts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/ionic-rails-engine-0.9.17/app/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/ionic-rails-engine-0.9.17/app/assets/stylesheets
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/jquery-turbolinks-2.0.2/vendor/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/turbolinks-2.2.1/lib/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/jquery-rails-3.1.0/vendor/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/bootstrap_and_customization.css.scss:11)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/assets/stylesheets/bootstrap_and_customization.css.scss:11
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3519122391460971231_2194666760'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:19:18 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (37.9ms)
+Warning. Error encountered while saving cache f395ec84d6bfb26724b66ea8b324d55b3f1869d4/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x000001048a2ed8>
+
+Completed 500 Internal Server Error in 90ms
+
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /Users/Aeip/Desktop/tenk-hours/app/assets/images
+  /Users/Aeip/Desktop/tenk-hours/app/assets/javascripts
+  /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets
+  /Users/Aeip/Desktop/tenk-hours/vendor/assets/javascripts
+  /Users/Aeip/Desktop/tenk-hours/vendor/assets/stylesheets
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/masonry-rails-0.2.1/vendor/assets/images
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/masonry-rails-0.2.1/vendor/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/masonry-rails-0.2.1/vendor/assets/stylesheets
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/ionic-rails-engine-0.9.17/app/assets/fonts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/ionic-rails-engine-0.9.17/app/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/ionic-rails-engine-0.9.17/app/assets/stylesheets
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/jquery-turbolinks-2.0.2/vendor/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/turbolinks-2.2.1/lib/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/jquery-rails-3.1.0/vendor/assets/javascripts
+  /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/coffee-rails-4.0.1/lib/assets/javascripts
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/bootstrap_and_customization.css.scss:11)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/assets/stylesheets/bootstrap_and_customization.css.scss:11
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4332520531730329181_2186540240'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:21:10 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.8ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (15.4ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1053467701510256957_2164409540'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:21:15 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.3ms)
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (couldn't find file 'ionic/ionic'
+  (in /Users/Aeip/Desktop/tenk-hours/app/assets/stylesheets/application.css:14)):
+    2: <html>
+    3: <head>
+    4:   <title>Pinteresting</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1053467701510256957_2164409540'
+
+
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Aeip/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:22:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.7ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (16.3ms)
+Warning. Error encountered while saving cache f395ec84d6bfb26724b66ea8b324d55b3f1869d4/bootstrap_and_customization.css.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache b5822afde5831fd6e70930cccb32804affb5fc3b/bootstrap.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_variables.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_mixins.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_normalize.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_print.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_type.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_code.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_grid.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tables.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_forms.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_buttons.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_component-animations.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_glyphicons.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_button-groups.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_input-groups.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navs.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_navbar.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pagination.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_pager.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_labels.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_badges.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_jumbotron.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_alerts.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_media.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_list-group.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_panels.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_wells.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_close.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_modals.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_tooltip.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_popovers.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_carousel.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_utilities.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache dff3afaaeadfd13fc55f7f5874fed3ffef293598/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache f395ec84d6bfb26724b66ea8b324d55b3f1869d4/pages.css.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+Warning. Error encountered while saving cache f395ec84d6bfb26724b66ea8b324d55b3f1869d4/pins.css.scssc: can't dump anonymous class #<Class:0x00000101433f08>
+
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 2898ms (Views: 2870.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/pins.css?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/pins.js?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-08 21:22:10 -0700
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-08 21:22:11 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (101.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 114ms (Views: 109.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-08 21:22:15 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-08 21:22:19 -0700
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:22:20 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (1.0ms)
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:22:21 -0700
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.3ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-03-08 21:22:22 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-08 21:22:27 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.9ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-08 21:23:06 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vltZC+jvijr5lau3RAD3l36aeVBhi9LzE4J5g7afRZ8=", "user"=>{"email"=>"aeip@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'aeip@live.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", Sun, 09 Mar 2014 04:23:06 UTC +00:00], ["sign_in_count", 2], ["updated_at", Sun, 09 Mar 2014 04:23:06 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 102ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:23:06 -0700
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-08 21:23:06 -0700
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-08 21:23:06 -0700
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-03-08 21:23:08 -0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-03-08 21:23:08 -0700
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:23:09 -0700
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-08 21:23:10 -0700
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins" ORDER BY created_at DESC LIMIT 50 OFFSET 0
+  Rendered pins/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms)
