@@ -25690,3 +25690,269 @@ Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-10
 
 
 Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-10 17:08:06 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (27.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 118ms (Views: 97.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-10 17:09:33 -0600
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yHRC8wxQ26w4p6AteoEL1QgyexB7cGDf/RYuo4QEPJE="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 39ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:38 -0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-10 17:09:43 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HS0RLT2/+uX/Wfiu/5L3PgmxUi+GYOb6hNasPqxKNDE=", "user"=>{"email"=>"aeip@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'aeip@live.com' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 86ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HS0RLT2/+uX/Wfiu/5L3PgmxUi+GYOb6hNasPqxKNDE=", "user"=>{"email"=>"aeip@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-10 17:09:56 -0600
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-10 17:10:01 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HS0RLT2/+uX/Wfiu/5L3PgmxUi+GYOb6hNasPqxKNDE=", "user"=>{"email"=>"aeip@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'aeip@live.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["last_sign_in_at", Sun, 09 Mar 2014 06:21:24 UTC +00:00], ["current_sign_in_at", Mon, 10 Mar 2014 23:10:01 UTC +00:00], ["sign_in_count", 6], ["updated_at", Mon, 10 Mar 2014 23:10:01 UTC +00:00]]
+  [1m[35m (8.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 95ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-10 17:10:02 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-10 17:14:18 -0600
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
