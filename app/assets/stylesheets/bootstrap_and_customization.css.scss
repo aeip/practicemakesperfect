@@ -7,8 +7,7 @@ $navbar-default-bg: 					white;
 $navbar-brand-size: 30px;
 $navbar-default-brand-color: 	#000;
 $brand-primary: 							#fff;
-$jumbotron-bg: 								rgba( 255, 255, 255, 0.4 );	
-
+$jumbotron-bg: 								rgba( 255, 255, 255, 0.8);	
 
 @import 'bootstrap';
 
@@ -26,5 +25,41 @@ $jumbotron-bg: 								rgba( 255, 255, 255, 0.4 );
 }
 
 body {
-	background-image:url(http://foundwalls.com/wallpapers/2013/08/Himalaya-mountains-768x1366.jpg);
+	background-image: url(http://www.digitaltsunami.com/wp-content/uploads/2012/03/health_centre_jogger.jpg);
+}
+
+
+.button.button-positive{
+	color:white;
+	background:#66cc33;	
+}
+
+.button:hover {
+	box-shadow: inset 0px 1px 30px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+	margin-top:10px;
+}
+
+#moverighte {
+	display: inline-block;
+	padding:10px;
+}
+
+#movelefte {
+	display: inline-block;
+	padding:10px;
+}
+
+.why a{
+	color:#3D423C;
+	text-decoration:none;
+	:hover {
+	color:#000;
+	}
+}
+
+a:hover {
+	text-decoration:none;
 }
