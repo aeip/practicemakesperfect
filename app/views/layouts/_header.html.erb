@@ -14,14 +14,22 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
+        <li><%= link_to "About", about_path %></li>
+=======
         <li><a href="<%= root_path %>"><button class="button button-dark icon-left">Home</button></a></li>
+>>>>>>> d2f573e6eb0bfbbc91a4ccd2fc973088f85d278c
         <% if user_signed_in? %>
-          <li><a href="<%= hobbies_path %>"><button class="button button-calm icon-left ion-ios7-compose">Hobbies</button></a></li>
-          <li><a href="<%= edit_user_registration_path %>"><button class="button button-energized icon-left ion-gear-a">Account settings</button></a></li>
-          <li style="padding-top: 10px;"><button class="button button-assertive icon-left ion-log-out"><%= link_to "Log out", destroy_user_session_path, method: :delete %></button></li>
+          <li><%= link_to "Hobbies", hobbies_path %></li>
+          <li><%= link_to "Account settings", edit_user_registration_path %></li>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% else %>
+<<<<<<< HEAD
+          <li><%= link_to "Log out", new_user_session_path %></li>
+=======
           <li><a href="<%= new_user_session_path %>"><button class="button button-balanced icon-left ion-log-in">Sign in</button></a></li>
           <li><a href="<%= new_user_registration_path %>"><button class="button button-energized icon-left ion-android-friends">Sign up</button></a></li>
+>>>>>>> d2f573e6eb0bfbbc91a4ccd2fc973088f85d278c
         <% end %>
         <li><a href="<%= about_path %>"><button class="button button-clear button-positive icon-left ion-tasks" >About</button></a></li>
       </ul>

@@ -15,4 +15,3 @@
 //= require turbolinks
 //= require masonry/jquery.masonry
 //= require_tree .
-//= require ionic/ionic
