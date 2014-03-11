@@ -20,7 +20,7 @@
     </tr>
     </thead>
     <tbody>
-    <% @hobbies.each do |hobby| %>
+    <% current_user.hobbies.each do |hobby| %>
       <tr>
         <td><%= hobby.name %></td>
         <td><%= hobby.description %></td>
@@ -33,10 +33,12 @@
         <td><%= hobby.saturday %></td>
         <td><%= hobby.created_at %></td>
         <td><%= hobby.sunday + hobby.monday + hobby.tuesday + hobby.wednesday + hobby.thursday + hobby.friday + hobby.saturday %></td>
+        <% if hobby.user == current_user %>
         <td><input type="checkbox" checked></input></td>
         <td><%= link_to "Show", hobby, class: "btn btn-success" %></td>
         <td><%= link_to "Edit", edit_hobby_path(hobby), class: "btn btn-warning" %></td>
         <td><%= link_to "Delete", hobby, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+        <% end %>
       </tr>
     <% end %>
     </tbody>

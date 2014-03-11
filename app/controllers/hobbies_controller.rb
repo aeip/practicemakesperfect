@@ -1,6 +1,6 @@
 class HobbiesController < ApplicationController
   before_action :set_hobby, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /hobbies
   # GET /hobbies.json
   def index
@@ -14,7 +14,7 @@ class HobbiesController < ApplicationController
 
   # GET /hobbies/new
   def new
-    @hobby = Hobby.new
+    @hobby = current_user.hobbies.build
   end
 
   # GET /hobbies/1/edit
@@ -24,7 +24,7 @@ class HobbiesController < ApplicationController
   # POST /hobbies
   # POST /hobbies.json
   def create
-    @hobby = Hobby.new(hobby_params)
+    @hobby = current_user.hobbies.build(hobby_params)
 
       if @hobby.save
         redirect_to @hobby, notice: 'Hobby was successfully created.'
