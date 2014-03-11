@@ -15,13 +15,26 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
+<<<<<<< HEAD
+        <li><a href="<%= root_path %>"><button class="button button-dark icon-left">Home</button></a></li>
+=======
+>>>>>>> 3486295ca1bcf3884ccf9a34102c7c5e593d6f09
         <% if user_signed_in? %>
           <li><%= link_to "Hobbies", hobbies_path %></li>
           <li><%= link_to "Account settings", edit_user_registration_path %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% else %>
+<<<<<<< HEAD
         <li><%= link_to "Log in", new_user_session_path %></li>
         <li><%= link_to "Sign up", new_user_registration_path %></li>
+=======
+<<<<<<< HEAD
+          <li><%= link_to "Log out", new_user_session_path %></li>
+=======
+>>>>>>> 3486295ca1bcf3884ccf9a34102c7c5e593d6f09
+          <li><a href="<%= new_user_session_path %>"><button class="button button-balanced icon-left ion-log-in">Sign in</button></a></li>
+          <li><a href="<%= new_user_registration_path %>"><button class="button button-energized icon-left ion-android-friends">Sign up</button></a></li>
+>>>>>>> b95dd637dc952214650f1292427c5a7dff195f44
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->

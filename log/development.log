@@ -30936,6 +30936,137 @@ Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-10 17:14:19 -0600
 =======
 >>>>>>> 270ada5e6e1fdb50f957c2af371158175ddb3664
+<<<<<<< HEAD
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-10 19:16:26 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (0.2ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (87.6ms)
+Completed 500 Internal Server Error in 118ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    32:         <td><%= hobby.friday %></td>
+    33:         <td><%= hobby.saturday %></td>
+    34:         <td><%= hobby.created_at %></td>
+    35:         <td><%= hobby.sunday + hobby.monday + hobby.tuesday + hobby.wednesday + hobby.thursday + hobby.friday + hobby.saturday %></td>
+    36:         <td><input type="checkbox" checked></input></td>
+    37:         <td><button class="button button-positive"><%= link_to 'Show', hobby %></button></td>
+    38:         <td><button class="button button-energized"><%= link_to 'Edit', edit_hobby_path(hobby) %></button></td>
+  app/views/hobbies/index.html.erb:35:in `block in _app_views_hobbies_index_html_erb__4207317508716281853_26250640'
+  app/views/hobbies/index.html.erb:23:in `_app_views_hobbies_index_html_erb__4207317508716281853_26250640'
+
+
+  Rendered /home/colin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/colin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/colin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-10 19:16:28 -0600
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (0.2ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    32:         <td><%= hobby.friday %></td>
+    33:         <td><%= hobby.saturday %></td>
+    34:         <td><%= hobby.created_at %></td>
+    35:         <td><%= hobby.sunday + hobby.monday + hobby.tuesday + hobby.wednesday + hobby.thursday + hobby.friday + hobby.saturday %></td>
+    36:         <td><input type="checkbox" checked></input></td>
+    37:         <td><button class="button button-positive"><%= link_to 'Show', hobby %></button></td>
+    38:         <td><button class="button button-energized"><%= link_to 'Edit', edit_hobby_path(hobby) %></button></td>
+  app/views/hobbies/index.html.erb:35:in `block in _app_views_hobbies_index_html_erb__4207317508716281853_26250640'
+  app/views/hobbies/index.html.erb:23:in `_app_views_hobbies_index_html_erb__4207317508716281853_26250640'
+
+
+  Rendered /home/colin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/colin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/colin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-10 19:16:30 -0600
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (0.2ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    32:         <td><%= hobby.friday %></td>
+    33:         <td><%= hobby.saturday %></td>
+    34:         <td><%= hobby.created_at %></td>
+    35:         <td><%= hobby.sunday + hobby.monday + hobby.tuesday + hobby.wednesday + hobby.thursday + hobby.friday + hobby.saturday %></td>
+    36:         <td><input type="checkbox" checked></input></td>
+    37:         <td><button class="button button-positive"><%= link_to 'Show', hobby %></button></td>
+    38:         <td><button class="button button-energized"><%= link_to 'Edit', edit_hobby_path(hobby) %></button></td>
+  app/views/hobbies/index.html.erb:35:in `block in _app_views_hobbies_index_html_erb__4207317508716281853_26250640'
+  app/views/hobbies/index.html.erb:23:in `_app_views_hobbies_index_html_erb__4207317508716281853_26250640'
+
+
+  Rendered /home/colin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/colin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/colin/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-10 20:45:41 -0600
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-10 20:45:41 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-10 20:45:41 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+
+
+Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
+=======
 >>>>>>> ed4970946fbfdc1f33be58357dec6fdc010f05e3
 <<<<<<< HEAD
 
@@ -30985,7 +31116,11 @@ Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
 =======
 >>>>>>> d2f573e6eb0bfbbc91a4ccd2fc973088f85d278c
+<<<<<<< HEAD
+>>>>>>> 75992c78d13da4e4801328200c5bce2c6b6f6f94
+=======
 >>>>>>> 2b0e4c5b0a846bbc7ea135300a2a8d3da8a3a991
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2014-03-11 12:56:03 -0600
@@ -33182,3 +33317,6 @@ Processing by PagesController#home as HTML
   Rendered pages/home.html.erb within layouts/application (1.2ms)
   Rendered layouts/_header.html.erb (0.3ms)
 Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+=======
+>>>>>>> 3486295ca1bcf3884ccf9a34102c7c5e593d6f09
+>>>>>>> b95dd637dc952214650f1292427c5a7dff195f44
