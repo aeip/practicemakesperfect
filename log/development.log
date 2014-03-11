@@ -31068,5 +31068,56 @@ Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 20:45:42
 Started GET "/assets/ionic/ionicons.ttf?v=1.4.0" for 127.0.0.1 at 2014-03-10 20:45:42 -0600
 =======
 >>>>>>> ed4970946fbfdc1f33be58357dec6fdc010f05e3
+<<<<<<< HEAD
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (31.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 168ms (Views: 143.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/ionic/ionic.css?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/ionic/ionic.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-10 18:05:16 -0600
+=======
 >>>>>>> d2f573e6eb0bfbbc91a4ccd2fc973088f85d278c
+<<<<<<< HEAD
 >>>>>>> 75992c78d13da4e4801328200c5bce2c6b6f6f94
+=======
+>>>>>>> 2b0e4c5b0a846bbc7ea135300a2a8d3da8a3a991
+>>>>>>> 3486295ca1bcf3884ccf9a34102c7c5e593d6f09
