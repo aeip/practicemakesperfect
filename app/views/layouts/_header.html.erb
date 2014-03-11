@@ -20,8 +20,8 @@
           <li><%= link_to "Account settings", edit_user_registration_path %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% else %>
-          <li><a href="<%= new_user_session_path %>"><button class="button button-balanced icon-left ion-log-in">Sign in</button></a></li>
-          <li><a href="<%= new_user_registration_path %>"><button class="button button-energized icon-left ion-android-friends">Sign up</button></a></li>
+        <li><%= link_to "Log in", new_user_session_path %></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->

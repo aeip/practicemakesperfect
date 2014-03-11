@@ -1,12 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-$body-bg: 										#ecf0f1;
-$font-family-sans-serif: 			'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-bg: 									#ecf0f1;
+$font-family-sans-serif: 					'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:								40px;
-$navbar-default-bg: 					white;
-$navbar-brand-size: 30px;
-$navbar-default-brand-color: 	#000;
-$brand-primary: 							#fff;
+$navbar-default-bg: 						white;
+$navbar-brand-size: 						30px;
+$navbar-default-brand-color: 				#000;
+$brand-primary: 							#00baf2;
 $jumbotron-bg: 								rgba( 255, 255, 255, 0.8);	
 
 @import 'bootstrap';
@@ -26,40 +26,4 @@ $jumbotron-bg: 								rgba( 255, 255, 255, 0.8);
 
 body {
 	background-image: url(http://www.digitaltsunami.com/wp-content/uploads/2012/03/health_centre_jogger.jpg);
-}
-
-
-.button.button-positive{
-	color:white;
-	background:#66cc33;	
-}
-
-.button:hover {
-	box-shadow: inset 0px 1px 30px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-brand {
-	margin-top:10px;
-}
-
-#moverighte {
-	display: inline-block;
-	padding:10px;
-}
-
-#movelefte {
-	display: inline-block;
-	padding:10px;
-}
-
-.why a{
-	color:#3D423C;
-	text-decoration:none;
-	:hover {
-	color:#000;
-	}
-}
-
-a:hover {
-	text-decoration:none;
 }

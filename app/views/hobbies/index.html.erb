@@ -34,9 +34,9 @@
         <td><%= hobby.created_at %></td>
         <td><%= hobby.sunday + hobby.monday + hobby.tuesday + hobby.wednesday + hobby.thursday + hobby.friday + hobby.saturday %></td>
         <td><input type="checkbox" checked></input></td>
-        <td><button class="button button-positive"><%= link_to 'Show', hobby %></button></td>
-        <td><button class="button button-energized"><%= link_to 'Edit', edit_hobby_path(hobby) %></button></td>
-        <td><button class="button button-assertive"><%= link_to 'Delete', hobby, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+        <td><%= link_to "Show", hobby, class: "btn btn-success" %></td>
+        <td><%= link_to "Edit", edit_hobby_path(hobby), class: "btn btn-warning" %></td>
+        <td><%= link_to "Delete", hobby, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
     </tbody>
@@ -45,7 +45,7 @@
 
 <br>
 
-<a href="<%= new_hobby_path %>"><button class="button button-positive">New Hobby</button></a>
+<%= link_to "New Hobby", new_hobby_path, class: "btn btn-success" %>
 <% else %>
   <h1>Please Sign in or Sign up</h1>
   <p>
