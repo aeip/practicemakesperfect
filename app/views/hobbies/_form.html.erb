@@ -13,41 +13,38 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_area :name, :required => true %>
+    <%= f.text_area :name, :required => true, class: "form-control" %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_area :description, :required => true %>
+    <%= f.text_area :description, :required => true, class: "form-control" %>
   </div>
   <br>
   <div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading">Hours</div>
-
-  <!-- Table -->
-  <table class="table">
-      <tr>
-        <td><%= f.label :sunday %></td>
-        <td><%= f.label :monday %></td>
-        <td><%= f.label :tuesday %></td>
-        <td><%= f.label :wednesday %></td>
-        <td><%= f.label :thursday %></td>
-        <td><%= f.label :friday %></td>
-        <td><%= f.label :saturday %></td>
-        <td><%= f.label :remind_me_with_Twilio %></td>
-      </tr>
-      <tr>
-        <td><%= f.text_field :sunday, :required => true %></td>
-        <td><%= f.text_field :monday, :required => true %></td>
-        <td><%= f.text_field :tuesday, :required => true %></td>
-        <td><%= f.text_field :wednesday, :required => true %></td>
-        <td><%= f.text_field :thursday, :required => true %></td>
-        <td><%= f.text_field :friday, :required => true %></td>
-        <td><%= f.text_field :saturday, :required => true %></td>
-        <td><input type="text" placeholder="Phone number"></input></td>
-      </tr>
-  </table>
-</div>
+    <div class="panel-heading">Hours</div>
+      <table class="table">
+          <tr>
+            <td><%= f.label :sunday %></td>
+            <td><%= f.label :monday %></td>
+            <td><%= f.label :tuesday %></td>
+            <td><%= f.label :wednesday %></td>
+            <td><%= f.label :thursday %></td>
+            <td><%= f.label :friday %></td>
+            <td><%= f.label :saturday %></td>
+            <td><%= f.label :remind_me_with_Twilio %></td>
+          </tr>
+          <tr>
+            <td><%= f.text_field :sunday, :required => true %></td>
+            <td><%= f.text_field :monday, :required => true %></td>
+            <td><%= f.text_field :tuesday, :required => true %></td>
+            <td><%= f.text_field :wednesday, :required => true %></td>
+            <td><%= f.text_field :thursday, :required => true %></td>
+            <td><%= f.text_field :friday, :required => true %></td>
+            <td><%= f.text_field :saturday, :required => true %></td>
+            <td><input type="text" placeholder="Phone number"></input></td>
+          </tr>
+      </table>
+    </div>
   <div class="field" style="display:none">
     <%= f.label :created_at %><br>
     <%= f.datetime_select :created_at %>
