@@ -38757,3 +38757,9 @@ Processing by PagesController#home as HTML
   Rendered pages/home.html.erb within layouts/application (1.9ms)
   Rendered layouts/_header.html.erb (0.7ms)
 Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserIdToHobbies (20140312131500)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "hobbies" ADD "user_id" integer[0m
+SQLite3::SQLException: duplicate column name: user_id: ALTER TABLE "hobbies" ADD "user_id" integer
+  [1m[35m (0.0ms)[0m  rollback transaction
