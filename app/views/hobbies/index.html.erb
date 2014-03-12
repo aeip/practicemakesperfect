@@ -32,7 +32,7 @@
         <td><%= hobby.friday %></td>
         <td><%= hobby.saturday %></td>
         <td><%= hobby.created_at %></td>
-        <td><%= hobby.sunday + hobby.monday + hobby.tuesday + hobby.wednesday + hobby.thursday + hobby.friday + hobby.saturday %></td>
+
         <% if hobby.user == current_user %>
         <td><input type="checkbox" checked></input></td>
         <td><%= link_to "Show", hobby, class: "btn btn-success" %></td>
