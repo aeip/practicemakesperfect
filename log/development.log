@@ -38757,3 +38757,65 @@ Processing by PagesController#home as HTML
   Rendered pages/home.html.erb within layouts/application (1.9ms)
   Rendered layouts/_header.html.erb (0.7ms)
 Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/home.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+Completed 200 OK in 76ms (Views: 69.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 15:54:38 -0600
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-12 15:54:41 -0600
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (1.8ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered hobbies/index.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 30.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 15:54:43 -0600
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.3ms)
