@@ -38828,3 +38828,2098 @@ Migrating to AddUserIdToHobbies (20140312131500)
 SQLite3::SQLException: duplicate column name: user_id: ALTER TABLE "hobbies" ADD "user_id" integer
   [1m[35m (0.0ms)[0m  rollback transaction
 >>>>>>> 419fee7d59e9690dc52d3ccde5df5f0d39c6ce53
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserIdToHobbies (20140312131500)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "hobbies" ADD "user_id" integer[0m
+SQLite3::SQLException: duplicate column name: user_id: ALTER TABLE "hobbies" ADD "user_id" integer
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserIdToHobbies (20140312131500)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "hobbies" ADD "user_id" integer[0m
+SQLite3::SQLException: duplicate column name: user_id: ALTER TABLE "hobbies" ADD "user_id" integer
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddHoursToHobbies (20140324112701)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (14.0ms)[0m  [1mALTER TABLE "hobbies" ADD "hours" integer[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140324112701"]]
+  [1m[36m (256.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mHobby Load (1.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" ORDER BY "hobbies"."id" ASC LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-24 07:38:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (26.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 5134ms (Views: 5068.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 07:38:59 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-24 07:39:02 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (189.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 277ms (Views: 228.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-24 07:39:04 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OMXj9M962Tgl6Mvt1EbNLNS9erbrDYgdmUnrup9q7F4=", "user"=>{"email"=>"slsatre@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'slsatre@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (62.0ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["last_sign_in_at", Mon, 10 Mar 2014 23:44:30 UTC +00:00], ["current_sign_in_at", Mon, 24 Mar 2014 11:39:04 UTC +00:00], ["sign_in_count", 7], ["updated_at", Mon, 24 Mar 2014 11:39:04 UTC +00:00]]
+  [1m[36m (82.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 399ms (ActiveRecord: 145.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-24 07:39:04 -0400
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:39:05 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (0.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (143.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 185ms (Views: 163.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:39:21 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (1.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `Hours' for #<Hobby:0x3fd4c88>):
+    23:     <tbody>
+    24:     <% current_user.hobbies.each do |hobby| %>
+    25:       <tr>
+    26:         <td><%= hobby.Hours %></td>
+    27:         <td><%= hobby.name %></td>
+    28:         <td><%= hobby.description %></td>
+    29:         <td><%= hobby.sunday %></td>
+  app/views/hobbies/index.html.erb:26:in `block in _app_views_hobbies_index_html_erb__933835061_29569776'
+  app/views/hobbies/index.html.erb:24:in `_app_views_hobbies_index_html_erb__933835061_29569776'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:39:43 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (0.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    23:     <tbody>
+    24:     <% current_user.hobbies.each do |hobby| %>
+    25:       <tr>
+    26:         <td><%= hobby.hours + 1 %></td>
+    27:         <td><%= hobby.name %></td>
+    28:         <td><%= hobby.description %></td>
+    29:         <td><%= hobby.sunday %></td>
+  app/views/hobbies/index.html.erb:26:in `block in _app_views_hobbies_index_html_erb__933835061_29725296'
+  app/views/hobbies/index.html.erb:24:in `_app_views_hobbies_index_html_erb__933835061_29725296'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:39:56 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (1.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    23:     <tbody>
+    24:     <% current_user.hobbies.each do |hobby| %>
+    25:       <tr>
+    26:         <td><%= (hobby.hours + 1) %></td>
+    27:         <td><%= hobby.name %></td>
+    28:         <td><%= hobby.description %></td>
+    29:         <td><%= hobby.sunday %></td>
+  app/views/hobbies/index.html.erb:26:in `block in _app_views_hobbies_index_html_erb__933835061_29453844'
+  app/views/hobbies/index.html.erb:24:in `_app_views_hobbies_index_html_erb__933835061_29453844'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:40:13 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (1.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 07:40:14 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:46:01 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (1.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (75.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 141ms (Views: 93.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:02 -0400
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-24 07:46:04 -0400
+Processing by HobbiesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/_form.html.erb (50.0ms)
+  Rendered hobbies/new.html.erb within layouts/application (54.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 81ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/hobbies" for 127.0.0.1 at 2014-03-24 07:46:32 -0400
+Processing by HobbiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tdhh/IecxSC+92ag3JuSTCtFkZzRuGm54dI+L2mS7ew=", "hobby"=>{"name"=>"new ", "description"=>"this should have hours", "sunday"=>"1", "monday"=>"2", "tuesday"=>"3", "wednesday"=>"4", "thursday"=>"5", "friday"=>"6", "saturday"=>"7", "created_at(1i)"=>"2014", "created_at(2i)"=>"3", "created_at(3i)"=>"24", "created_at(4i)"=>"11", "created_at(5i)"=>"46"}, "commit"=>"Create Hobby"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 12ms
+
+NameError (undefined local variable or method `hobby' for #<HobbiesController:0x37efd68>):
+  app/controllers/hobbies_controller.rb:28:in `create'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+Processing by HobbiesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/_form.html.erb (11.0ms)
+  Rendered hobbies/new.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 115ms (Views: 33.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 07:46:51 -0400
+
+
+Started POST "/hobbies" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+Processing by HobbiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tdhh/IecxSC+92ag3JuSTCtFkZzRuGm54dI+L2mS7ew=", "hobby"=>{"name"=>"saasd", "description"=>"dsdafsdsd", "sunday"=>"1", "monday"=>"2", "tuesday"=>"3", "wednesday"=>"4", "thursday"=>"5", "friday"=>"6", "saturday"=>"7", "created_at(1i)"=>"2014", "created_at(2i)"=>"3", "created_at(3i)"=>"24", "created_at(4i)"=>"11", "created_at(5i)"=>"46"}, "commit"=>"Create Hobby"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "hobbies" ("created_at", "description", "friday", "hours", "monday", "name", "saturday", "sunday", "thursday", "tuesday", "updated_at", "user_id", "wednesday") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 24 Mar 2014 11:46:00 UTC +00:00], ["description", "dsdafsdsd"], ["friday", 6], ["hours", 1], ["monday", 2], ["name", "saasd"], ["saturday", 7], ["sunday", 1], ["thursday", 5], ["tuesday", 3], ["updated_at", Mon, 24 Mar 2014 11:47:04 UTC +00:00], ["user_id", 3], ["wednesday", 4]]
+  [1m[36m (169.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/hobbies/9
+Completed 302 Found in 187ms (ActiveRecord: 171.0ms)
+
+
+Started GET "/hobbies/9" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+Processing by HobbiesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mHobby Load (0.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 47ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:04 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:47:08 -0400
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (1.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 75ms (Views: 69.0ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/hobbies/6" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+Processing by HobbiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tdhh/IecxSC+92ag3JuSTCtFkZzRuGm54dI+L2mS7ew=", "id"=>"6"}
+  [1m[36mHobby Load (0.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "hobbies" WHERE "hobbies"."id" = ?  [["id", 6]]
+  [1m[36m (87.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/hobbies
+Completed 302 Found in 101ms (ActiveRecord: 88.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (0.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 56ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:20 -0400
+
+
+Started DELETE "/hobbies/5" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+Processing by HobbiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tdhh/IecxSC+92ag3JuSTCtFkZzRuGm54dI+L2mS7ew=", "id"=>"5"}
+  [1m[35mHobby Load (0.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "hobbies" WHERE "hobbies"."id" = ?[0m  [["id", 5]]
+  [1m[35m (113.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/hobbies
+Completed 302 Found in 123ms (ActiveRecord: 115.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (0.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 52ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 07:47:23 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 07:56:11 -0400
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (1.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mHobby Load (0.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies"[0m
+  Rendered hobbies/index.html.erb within layouts/application (90.0ms)
+Completed 500 Internal Server Error in 141ms
+
+ActionView::Template::Error (undefined method `add_hobby_path' for #<#<Class:0x622aaa8>:0x622a118>):
+    40:         <td><%= link_to "Show", hobby, class: "btn btn-success" %></td>
+    41:         <td><%= link_to "Edit", edit_hobby_path(hobby), class: "btn btn-warning" %></td>
+    42:         <td><%= link_to "Delete", hobby, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+    43:         <td><%= link_to "add hours", add_hobby_path(hobby), class: "btn btn-info" %></td>
+    44:         <td><%= link_to "subtract hours", subtract_hobby_path(hobby), class: "btn btn-info" %></td>
+    45:         <% end %>
+    46:       </tr>
+  app/views/hobbies/index.html.erb:43:in `block in _app_views_hobbies_index_html_erb__933835061_51464772'
+  app/views/hobbies/index.html.erb:24:in `_app_views_hobbies_index_html_erb__933835061_51464772'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 235ms (Views: 200.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:48 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-24 15:59:51 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (70.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 136ms (Views: 97.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-24 15:59:52 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0AEABNWQYdT2pAc793OamZWe0JKLxy6tEQBOG2+v9TY=", "user"=>{"email"=>"slsatre@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'slsatre@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.0ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["last_sign_in_at", Mon, 24 Mar 2014 11:39:04 UTC +00:00], ["current_sign_in_at", Mon, 24 Mar 2014 19:59:53 UTC +00:00], ["sign_in_count", 8], ["updated_at", Mon, 24 Mar 2014 19:59:53 UTC +00:00]]
+  [1m[36m (53.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 164ms (ActiveRecord: 62.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 15:59:53 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 15:59:55 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (0.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (76.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 115ms (Views: 98.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-24 15:59:57 -0400
+
+AbstractController::ActionNotFound (The action 'add/:id' could not be found for HobbiesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__185538234__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-24 15:59:57 -0400
+
+AbstractController::ActionNotFound (The action 'add/:id' could not be found for HobbiesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__185538234__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-24 16:00:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (46.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 281ms (Views: 248.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 16:00:38 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 16:00:42 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (6.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (84.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 157ms (Views: 103.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-24 16:00:44 -0400
+Processing by HobbiesController#add as 
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/add.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 16:01:13 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (1.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/hobbies/new" for 127.0.0.1 at 2014-03-24 16:01:14 -0400
+Processing by HobbiesController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/_form.html.erb (76.0ms)
+  Rendered hobbies/new.html.erb within layouts/application (81.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 114ms (Views: 106.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/hobbies" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+Processing by HobbiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0wDL6sk/3D/yMsRBlazvJCG/+BKzJC8vrWfc8YmJY1k=", "hobby"=>{"name"=>"gdfafg", "description"=>"jhghj", "sunday"=>"1", "monday"=>"2", "tuesday"=>"4", "wednesday"=>"5", "thursday"=>"7", "friday"=>"9", "saturday"=>"2", "created_at(1i)"=>"2014", "created_at(2i)"=>"3", "created_at(3i)"=>"24", "created_at(4i)"=>"20", "created_at(5i)"=>"01"}, "commit"=>"Create Hobby"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "hobbies" ("created_at", "description", "friday", "hours", "monday", "name", "saturday", "sunday", "thursday", "tuesday", "updated_at", "user_id", "wednesday") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 24 Mar 2014 20:01:00 UTC +00:00], ["description", "jhghj"], ["friday", 9], ["hours", 0], ["monday", 2], ["name", "gdfafg"], ["saturday", 2], ["sunday", 1], ["thursday", 7], ["tuesday", 4], ["updated_at", Mon, 24 Mar 2014 20:01:29 UTC +00:00], ["user_id", 3], ["wednesday", 5]]
+  [1m[35m (137.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/hobbies/10
+Completed 302 Found in 149ms (ActiveRecord: 138.0ms)
+
+
+Started GET "/hobbies/10" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+Processing by HobbiesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mHobby Load (0.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 16:01:29 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 16:01:31 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (0.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/add_hobby.10" for 127.0.0.1 at 2014-03-24 16:01:33 -0400
+Processing by HobbiesController#add as 
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/add.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 35ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 16:03:58 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 16:04:00 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (0.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-24 16:04:01 -0400
+Processing by HobbiesController#add as 
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/add.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (4.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (96.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 429ms (Views: 301.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 16:19:53 -0400
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-24 16:19:55 -0400
+Processing by HobbiesController#add as 
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+ERROR: compiling _app_views_hobbies_add_html_erb__987855222_29212776 RAISED c:/Users/SlowOne/projects/practicemakesperfect/app/views/hobbies/add.html.erb:4: syntax error, unexpected ',', expecting ')'
+...end=( @hobby.add_hours(amount), :required => true );@output_...
+...                               ^
+Function body:           def _app_views_hobbies_add_html_erb__987855222_29212776(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "hobbies/add";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new; if user_signed_in? 
+@output_buffer.safe_append='<h1>add hours unscheduled hobby</h1>
+<div class="field">
+	';@output_buffer.append=( @hobby.add_hours(amount), :required => true );@output_buffer.safe_append='
+';@output_buffer.safe_append='</div>
+<br>
+';@output_buffer.append=( link_to "Show", @hobby, class: "btn btn-success" );@output_buffer.safe_append='
+';@output_buffer.append=( link_to "Back", hobbies_path, class: "btn btn-warning" );@output_buffer.safe_append='
+'; else 
+@output_buffer.safe_append='	<h1>You must signin or sign up</h1>
+	<p>
+		';@output_buffer.append=( link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" );@output_buffer.safe_append='
+';@output_buffer.safe_append='	 	';@output_buffer.append=( link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-lg" );@output_buffer.safe_append='
+';@output_buffer.safe_append='	</p>
+'; end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:433:in `_run__654071329__process_action__callbacks'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__722980926__call__callbacks'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered hobbies/add.html.erb within layouts/application (107.0ms)
+Completed 500 Internal Server Error in 122ms
+
+ActionView::Template::Error (c:/Users/SlowOne/projects/practicemakesperfect/app/views/hobbies/add.html.erb:4: syntax error, unexpected ',', expecting ')'
+...end=( @hobby.add_hours(amount), :required => true );@output_...
+...                               ^):
+    1: <% if user_signed_in? %>
+    2: <h1>add hours unscheduled hobby</h1>
+    3: <div class="field">
+    4: 	<%= @hobby.add_hours(amount), :required => true %>
+    5: </div>
+    6: <br>
+    7: <%= link_to "Show", @hobby, class: "btn btn-success" %>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:433:in `_run__654071329__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__722980926__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-24 16:19:56 -0400
+Processing by HobbiesController#add as 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+ERROR: compiling _app_views_hobbies_add_html_erb__987855222_29212776 RAISED c:/Users/SlowOne/projects/practicemakesperfect/app/views/hobbies/add.html.erb:4: syntax error, unexpected ',', expecting ')'
+...end=( @hobby.add_hours(amount), :required => true );@output_...
+...                               ^
+Function body:           def _app_views_hobbies_add_html_erb__987855222_29212776(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "hobbies/add";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new; if user_signed_in? 
+@output_buffer.safe_append='<h1>add hours unscheduled hobby</h1>
+<div class="field">
+	';@output_buffer.append=( @hobby.add_hours(amount), :required => true );@output_buffer.safe_append='
+';@output_buffer.safe_append='</div>
+<br>
+';@output_buffer.append=( link_to "Show", @hobby, class: "btn btn-success" );@output_buffer.safe_append='
+';@output_buffer.append=( link_to "Back", hobbies_path, class: "btn btn-warning" );@output_buffer.safe_append='
+'; else 
+@output_buffer.safe_append='	<h1>You must signin or sign up</h1>
+	<p>
+		';@output_buffer.append=( link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" );@output_buffer.safe_append='
+';@output_buffer.safe_append='	 	';@output_buffer.append=( link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-lg" );@output_buffer.safe_append='
+';@output_buffer.safe_append='	</p>
+'; end ;@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:433:in `_run__654071329__process_action__callbacks'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__722980926__call__callbacks'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered hobbies/add.html.erb within layouts/application (91.0ms)
+Completed 500 Internal Server Error in 110ms
+
+ActionView::Template::Error (c:/Users/SlowOne/projects/practicemakesperfect/app/views/hobbies/add.html.erb:4: syntax error, unexpected ',', expecting ')'
+...end=( @hobby.add_hours(amount), :required => true );@output_...
+...                               ^):
+    1: <% if user_signed_in? %>
+    2: <h1>add hours unscheduled hobby</h1>
+    3: <div class="field">
+    4: 	<%= @hobby.add_hours(amount), :required => true %>
+    5: </div>
+    6: <br>
+    7: <%= link_to "Show", @hobby, class: "btn btn-success" %>
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:433:in `_run__654071329__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__722980926__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAmountToHobbies (20140325111335)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (24.0ms)[0m  [1mALTER TABLE "hobbies" ADD "amount" integer[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140325111335"]]
+  [1m[36m (98.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-25 07:19:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (73.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 1182ms (Views: 1116.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:24 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-03-25 07:19:26 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (229.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 318ms (Views: 264.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZsPUmjc7kMsvRDWqXZbiIqaAYBxBYnGgpEsz4IOnycI=", "user"=>{"email"=>"slsatre@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'slsatre@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (70.0ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["last_sign_in_at", Mon, 24 Mar 2014 19:59:53 UTC +00:00], ["current_sign_in_at", Tue, 25 Mar 2014 11:19:28 UTC +00:00], ["sign_in_count", 9], ["updated_at", Tue, 25 Mar 2014 11:19:28 UTC +00:00]]
+  [1m[36m (74.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 451ms (ActiveRecord: 145.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 07:19:28 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-25 07:19:30 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (0.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (154.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 204ms (Views: 172.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:19:34 -0400
+Processing by HobbiesController#add as 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/add.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@hobby) do |f| %>
+    2:   <% if @hobby.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@hobby.errors.count, "error") %> prohibited this hobby from being saved:</h2>
+  app/views/hobbies/add.html.erb:1:in `_app_views_hobbies_add_html_erb__1037740893_28972452'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:19:34 -0400
+Processing by HobbiesController#add as 
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/add.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@hobby) do |f| %>
+    2:   <% if @hobby.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@hobby.errors.count, "error") %> prohibited this hobby from being saved:</h2>
+  app/views/hobbies/add.html.erb:1:in `_app_views_hobbies_add_html_erb__1037740893_28972452'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:25:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HobbiesController#add as 
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/add.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 130ms
+
+ActionView::Template::Error (undefined method `text_field' for nil:NilClass):
+    1: <% if user_signed_in? %>
+    2: <h1>adding unscheduled hours to hobby</h1>
+    3: <td><%= @hobby.text_field :amount, :required => true %></td><br>
+    4: <%= link_to "Show", @hobby, class: "btn btn-success" %>
+    5: <%= link_to "Back", hobbies_path, class: "btn btn-warning" %>
+    6: <% else %>
+  app/views/hobbies/add.html.erb:3:in `_app_views_hobbies_add_html_erb__884075433_35567652'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered pages/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 162ms (Views: 120.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 07:25:42 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-25 07:25:44 -0400
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (4.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (79.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 146ms (Views: 125.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:25:46 -0400
+Processing by HobbiesController#add as 
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/add.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `text_field' for nil:NilClass):
+    1: <% if user_signed_in? %>
+    2: <h1>adding unscheduled hours to hobby</h1>
+    3: <td><%= @hobby.text_field :amount, :required => true %></td><br>
+    4: <%= link_to "Show", @hobby, class: "btn btn-success" %>
+    5: <%= link_to "Back", hobbies_path, class: "btn btn-warning" %>
+    6: <% else %>
+  app/views/hobbies/add.html.erb:3:in `_app_views_hobbies_add_html_erb__884075433_35567652'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:25:47 -0400
+Processing by HobbiesController#add as 
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/add.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `text_field' for nil:NilClass):
+    1: <% if user_signed_in? %>
+    2: <h1>adding unscheduled hours to hobby</h1>
+    3: <td><%= @hobby.text_field :amount, :required => true %></td><br>
+    4: <%= link_to "Show", @hobby, class: "btn btn-success" %>
+    5: <%= link_to "Back", hobbies_path, class: "btn btn-warning" %>
+    6: <% else %>
+  app/views/hobbies/add.html.erb:3:in `_app_views_hobbies_add_html_erb__884075433_35567652'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:26:05 -0400
+Processing by HobbiesController#add as 
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/add.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `text_field' for nil:NilClass):
+    1: <% if user_signed_in? %>
+    2: <h1>adding unscheduled hours to hobby</h1>
+    3: <%= @hobby.text_field :amount, :required => true %>
+    4: <%= link_to "Show", @hobby, class: "btn btn-success" %>
+    5: <%= link_to "Back", hobbies_path, class: "btn btn-warning" %>
+    6: <% else %>
+  app/views/hobbies/add.html.erb:3:in `_app_views_hobbies_add_html_erb__884075433_28983540'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:27:49 -0400
+Processing by HobbiesController#add as 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/add.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <% if user_signed_in? %>
+    2: <h1>adding unscheduled hours to hobby</h1>
+    3: <%= form_for(@hobby) do |f| %>
+    4:   <%= f.text_field :amount, :required => true %>
+    5:   <div class="actions">
+    6:     <%= f.submit %>
+  app/views/hobbies/add.html.erb:3:in `_app_views_hobbies_add_html_erb__884075433_29128356'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:27:54 -0400
+Processing by HobbiesController#add as 
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/add.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <% if user_signed_in? %>
+    2: <h1>adding unscheduled hours to hobby</h1>
+    3: <%= form_for(@hobby) do |f| %>
+    4:   <%= f.text_field :amount, :required => true %>
+    5:   <div class="actions">
+    6:     <%= f.submit %>
+  app/views/hobbies/add.html.erb:3:in `_app_views_hobbies_add_html_erb__884075433_29001240'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:34:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HobbiesController#add as 
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/add.html.erb within layouts/application (40.0ms)
+Completed 500 Internal Server Error in 133ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <% if user_signed_in? %>
+    2: <h1>Editing hobby</h1>
+    3: 
+    4: <%= form_for(@hobby) do |f| %>
+    5:   <% if @hobby.errors.any? %>
+    6:     <div id="error_explanation">
+    7:       <h2><%= pluralize(@hobby.errors.count, "error") %> prohibited this hobby from being saved:</h2>
+  app/views/hobbies/add.html.erb:4:in `_app_views_hobbies_add_html_erb___567573826_35220036'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (41.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 222ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:18 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-25 07:36:20 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (4.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (100.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 137ms (Views: 115.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:36:22 -0400
+Processing by HobbiesController#add as 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/add.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <% if user_signed_in? %>
+    2: <h1>Editing hobby</h1>
+    3: 
+    4: <%= form_for(@hobby) do |f| %>
+    5:   <% if @hobby.errors.any? %>
+    6:     <div id="error_explanation">
+    7:       <h2><%= pluralize(@hobby.errors.count, "error") %> prohibited this hobby from being saved:</h2>
+  app/views/hobbies/add.html.erb:4:in `_app_views_hobbies_add_html_erb__197491072_47235144'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:36:22 -0400
+Processing by HobbiesController#add as 
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/add.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <% if user_signed_in? %>
+    2: <h1>Editing hobby</h1>
+    3: 
+    4: <%= form_for(@hobby) do |f| %>
+    5:   <% if @hobby.errors.any? %>
+    6:     <div id="error_explanation">
+    7:       <h2><%= pluralize(@hobby.errors.count, "error") %> prohibited this hobby from being saved:</h2>
+  app/views/hobbies/add.html.erb:4:in `_app_views_hobbies_add_html_erb__197491072_47235144'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/add_hobby.9" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+Processing by HobbiesController#add as 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/add.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 64ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 07:36:37 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-25 07:36:41 -0400
+Processing by HobbiesController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mHobby Load (1.0ms)[0m  [1mSELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 55ms (Views: 49.0ms | ActiveRecord: 2.0ms)

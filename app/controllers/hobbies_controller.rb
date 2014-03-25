@@ -25,29 +25,37 @@ class HobbiesController < ApplicationController
   # POST /hobbies.json
   def create
     @hobby = current_user.hobbies.build(hobby_params)
-
-      if @hobby.save
-        redirect_to @hobby, notice: 'Hobby was successfully created.'
-      else
-        render action: 'new'
-      end
+    @hobby.hours = 0
+    if @hobby.save
+      redirect_to @hobby, notice: 'Hobby was successfully created.'
+    else
+      render action: 'new'
+    end
   end
 
   # PATCH/PUT /hobbies/1
   # PATCH/PUT /hobbies/1.json
   def update
-      if @hobby.update(hobby_params)
-        redirect_to @hobby, notice: 'Hobby was successfully updated.'
-      else
-        render action: 'edit'
-      end
+    if @hobby.update(hobby_params)
+      redirect_to @hobby, notice: 'Hobby was successfully updated.'
+    else
+      render action: 'edit'
+    end
   end
 
   # DELETE /hobbies/1
   # DELETE /hobbies/1.json
   def destroy
     @hobby.destroy
-      redirect_to hobbies_url
+    redirect_to hobbies_url
+  end
+
+  def add_hours(amount)
+    @hobby.hours += (amount)
+  end
+
+  def subtract_hours(amount)
+    @hobby.hours -= (amount)
   end
 
   private

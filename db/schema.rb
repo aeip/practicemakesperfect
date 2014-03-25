@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140309174025) do
+ActiveRecord::Schema.define(version: 20140325111335) do
 
   create_table "hobbies", force: true do |t|
     t.text     "name"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20140309174025) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.integer  "hours"
+    t.integer  "amount"
   end
 
   add_index "hobbies", ["user_id"], name: "index_hobbies_on_user_id"
