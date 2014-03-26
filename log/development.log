@@ -42385,3 +42385,119 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
   Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
   Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
   Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-25 20:01:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (67.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 264ms (Views: 228.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 20:01:46 -0400
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/hobbies.css?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/bootstrap_and_customization.css?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/hobbies.js?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 20:01:47 -0400
+
+
+Started GET "/hobbies" for 127.0.0.1 at 2014-03-25 20:01:50 -0400
+Processing by HobbiesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mHobby Load (4.0ms)[0m  SELECT "hobbies".* FROM "hobbies" WHERE "hobbies"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered hobbies/index.html.erb within layouts/application (107.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 146ms (Views: 125.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/hobbies/9/add" for 127.0.0.1 at 2014-03-25 20:01:52 -0400
+Processing by HobbiesController#add as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered hobbies/_form.html.erb (9.0ms)
+  Rendered hobbies/add.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@hobby) do |f| %>
+    2:   <% if @hobby.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@hobby.errors.count, "error") %> prohibited this hobby from being saved:</h2>
+  app/views/hobbies/_form.html.erb:1:in `_app_views_hobbies__form_html_erb__317398465_64130292'
+  app/views/hobbies/add.html.erb:4:in `_app_views_hobbies_add_html_erb___514843369_64116576'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/hobbies/9/add" for 127.0.0.1 at 2014-03-25 20:01:52 -0400
+Processing by HobbiesController#add as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered hobbies/_form.html.erb (3.0ms)
+  Rendered hobbies/add.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@hobby) do |f| %>
+    2:   <% if @hobby.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@hobby.errors.count, "error") %> prohibited this hobby from being saved:</h2>
+  app/views/hobbies/_form.html.erb:1:in `_app_views_hobbies__form_html_erb__317398465_34477380'
+  app/views/hobbies/add.html.erb:4:in `_app_views_hobbies_add_html_erb___514843369_34216836'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/hobbies/9/add" for 127.0.0.1 at 2014-03-25 20:02:00 -0400
+Processing by HobbiesController#add as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 42ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/hobbies_controller.rb:56:in `add'
+
+
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (29.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.0ms)

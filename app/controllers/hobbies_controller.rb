@@ -52,7 +52,9 @@ class HobbiesController < ApplicationController
     redirect_to hobbies_url
   end
 
-  def add
+  # GET /hobbies/1/add
+  def add(amount)
+    @hobby.hours += (amount)
   end
 
   # GET /hobbies/1/subtract
