@@ -18,6 +18,7 @@ class HobbiesController < ApplicationController
   end
 
   # GET /hobbies/1/edit
+  # GET /hobbies/1/edit
   def edit
   end
 
@@ -26,6 +27,7 @@ class HobbiesController < ApplicationController
   def create
     @hobby = current_user.hobbies.build(hobby_params)
     @hobby.hours = 0
+    @hoby.amount = 0
     if @hobby.save
       redirect_to @hobby, notice: 'Hobby was successfully created.'
     else
@@ -50,11 +52,11 @@ class HobbiesController < ApplicationController
     redirect_to hobbies_url
   end
 
-  def add_hours(amount)
-    @hobby.hours += (amount)
+  def add
   end
 
-  def subtract_hours(amount)
+  # GET /hobbies/1/subtract
+  def subtract(amount)
     @hobby.hours -= (amount)
   end
 

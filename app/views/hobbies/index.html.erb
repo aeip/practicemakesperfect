@@ -40,8 +40,8 @@
         <td><%= link_to "Show", hobby, class: "btn btn-success" %></td>
         <td><%= link_to "Edit", edit_hobby_path(hobby), class: "btn btn-warning" %></td>
         <td><%= link_to "Delete", hobby, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
-        <td><%= link_to "add hours", add_hobby_path(hobby), class: "btn btn-info" %></td>
-        <td><%= link_to "subtract hours", subtract_hobby_path(hobby), class: "btn btn-info" %></td>
+        <td><%= link_to "add hours", add_path(hobby), class: "btn btn-info" %></td>
+        <td><%= link_to "subtract hours", subtract_path(hobby), class: "btn btn-info" %></td>
         <% end %>
       </tr>
     <% end %>

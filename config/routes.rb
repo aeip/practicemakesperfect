@@ -1,10 +1,12 @@
 Pinteresting::Application.routes.draw do
   resources :hobbies
+  get 'hobbies/:id/add' => 'hobbies#add', as: :add
+  get 'hobbies/:id/subtract' => 'hobbies#subtract',as: :subtract
   devise_for :users
   root "pages#home"
   get "about" => "pages#about" # creates about_path
-  get "subtract_hobby" => "hobbies#subtract"
-  get "add_hobby" => "hobbies#add"
+  
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

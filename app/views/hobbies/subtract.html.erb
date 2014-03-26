@@ -1,14 +1,14 @@
 <% if user_signed_in? %>
-<h1>add unscheduled hours to the hobby</h1>
+<h1>Editing hobby</h1>
 
-
+<%= render 'form' %>
 <br>
 <%= link_to "Show", @hobby, class: "btn btn-success" %>
 <%= link_to "Back", hobbies_path, class: "btn btn-warning" %>
 <% else %>
-  <h1>You must signin or sign up</h1>
-  <p>
-    <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-lg" %>
-  </p>
+	<h1>You must signin or sign up</h1>
+	<p>
+		<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+	 	<%= link_to "Sign up", new_user_registration_path, class: "btn btn-success btn-lg" %>
+	</p>
 <% end %>
